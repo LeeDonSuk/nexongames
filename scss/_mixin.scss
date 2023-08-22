@@ -1,0 +1,16 @@
+@mixin greed{
+        max-width: 66.6667vw;
+        margin: 0 auto;
+}
+@mixin secheigth{
+        height: 59.4792vw;
+}
+@mixin bold{
+    font-family: "NEXON-Bold";
+}
+@mixin light {
+    font-family: "NEXON-Light";
+}
+@mixin Gothic {
+    font-family: "NEXON-Gothic";
+}

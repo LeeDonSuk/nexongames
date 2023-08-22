@@ -406,6 +406,7 @@ main .banner-wrap {
 main .banner-wrap .slide-wrap {
   display: flex;
   width: 100%;
+  transition: 0.5s;
 }
 main .banner-wrap .slide-wrap .banner-slide {
   width: 100%;
@@ -422,7 +423,7 @@ main .banner-wrap .slide-wrap.active {
   transform: translateX(-100%);
 }
 main .banner-wrap .slide-controlls {
-  width: 100%;
+  width: 90%;
   height: 90px;
   max-width: 1280px;
   position: absolute;
@@ -449,4 +450,227 @@ main .banner-wrap .slide-controlls .slide-progressbar .silide-progressinner {
   width: 25%;
   height: 2px;
   background-color: white;
+  transition: 0.5s;
+}
+main .banner-wrap .slide-controlls .slide-number {
+  text-align: right;
+}
+main .banner-wrap .slide-controlls .slide-number .number-data {
+  font-size: 0.8vw;
+  color: white;
+  margin-top: 1vw;
+}
+main .introduction {
+  width: 90%;
+  max-width: 66.6667vw;
+  margin: 0 auto;
+}
+main .introduction .in-title {
+  text-align: center;
+  margin-top: 4.6875vw;
+  margin-bottom: 4.5313vw;
+}
+main .introduction .in-title h1 {
+  font-family: "NEXON-Gothic";
+  font-weight: 300;
+  font-size: 2.9688vw;
+}
+main .introduction .in-title h2 {
+  font-family: "NEXON-Bold";
+  font-size: 3.4896vw;
+}
+main .introduction .in-title .in-deco {
+  width: 1px;
+  height: 2.6042vw;
+  margin: 2.4479vw auto;
+  background-color: black;
+  text-align: center;
+}
+main .introduction .in-flex figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main .introduction .in-flex figure img {
+  width: 60%;
+}
+main .introduction .in-flex figure figcaption {
+  font-family: "NEXON-Gothic";
+  font-weight: bold;
+  width: 40%;
+  font-size: 1.4583vw;
+}
+main .introduction .in-flex figure figcaption p {
+  margin-bottom: 2.8646vw;
+}
+main .producer {
+  position: relative;
+  overflow: hidden;
+  height: 59.4792vw;
+}
+main .producer .producerback {
+  width: 100%;
+  position: absolute;
+  z-index: -99;
+  top: -8.7708vw;
+}
+main .producer .producer-title {
+  max-width: 66.6667vw;
+  margin: 0 auto;
+  padding-top: 12.8646vw;
+  font-size: 3vw;
+  padding-bottom: 2.9688vw;
+}
+main .producer .transform-controlls {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 14.5833vw;
+  right: 20.8333vw;
+  z-index: 99;
+}
+main .producer .transform-controlls p {
+  display: flex;
+  align-items: center;
+  font-size: 1.0417vw;
+  font-family: "NEXON-Bold";
+}
+main .producer .transform-controlls p.transfrom-deco {
+  color: #dddddd;
+  margin-left: 0.7813vw;
+  margin-right: 0.7813vw;
+}
+main .producer .transform-controlls .trnasform-prev {
+  transition: 0.5s;
+}
+main .producer .transform-controlls .trnasform-prev p span {
+  margin-right: 0.6771vw;
+}
+main .producer .transform-controlls .trnasform-prev:hover {
+  cursor: pointer;
+  transform: translateX(-10px);
+}
+main .producer .transform-controlls .trnasform-next {
+  transition: 0.5s;
+}
+main .producer .transform-controlls .trnasform-next p span {
+  margin-left: 0.6771vw;
+}
+main .producer .transform-controlls .trnasform-next:hover {
+  cursor: pointer;
+  transform: translateX(10px);
+}
+main .producer .swiper {
+  width: 100%;
+  max-width: 66.6667vw;
+  margin: 0 auto;
+  height: 100%;
+}
+main .producer .swiper .swiper-slide figure {
+  display: flex;
+  align-items: center;
+}
+main .producer .swiper .swiper-slide figure img {
+  width: 294px;
+}
+main .producer .swiper .swiper-slide figure figcaption {
+  margin-left: 5.2083vw;
+}
+main .producer .swiper .swiper-slide figure figcaption p.p-title {
+  color: #cad401;
+  font-size: 0.9375vw;
+  margin-bottom: 1.25vw;
+}
+main .producer .swiper .swiper-slide figure figcaption p.p-name {
+  font-size: 2.3438vw;
+  margin-bottom: 2.8021vw;
+}
+main .producer .swiper .swiper-slide figure figcaption p.p-name span {
+  font-size: 0.8854vw;
+  color: #999999;
+  padding-left: 0.4688vw;
+}
+main .producer .swiper .swiper-slide figure figcaption p.promotion {
+  font-size: 1.4583vw;
+  margin-bottom: 0.9896vw;
+}
+main .producer .swiper .swiper-slide figure figcaption p.comment {
+  font-size: 0.8333vw;
+  padding-left: 0.9375vw;
+}
+main .news {
+  max-width: 66.6667vw;
+  margin: 0 auto;
+}
+main .news .news-title {
+  padding-bottom: 4.1667vw;
+}
+main .news .news-title h1 {
+  font-size: 3.3854vw;
+}
+main .news .news-title .ne-more {
+  text-align: right;
+  transition: 0.5s;
+}
+main .news .news-title .ne-more:hover {
+  cursor: pointer;
+  transform: translateX(10px);
+}
+main .news .news-title .ne-more mark {
+  width: 3.0208vw;
+  align-items: center;
+  font-size: 1.25vw;
+  background: none;
+  position: relative;
+}
+main .news .news-title .ne-more mark::after {
+  content: "";
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  background-color: #007aff;
+  left: 0;
+  bottom: 0;
+  opacity: 0.8;
+  z-index: -1;
+}
+main .news .news-title .ne-more span {
+  vertical-align: middle;
+}
+main .news .news-boxs .boxs-container {
+  width: 100%;
+  display: flex;
+}
+main .news .news-boxs .boxs-container .ne-boxs {
+  width: 33.3333333333%;
+  margin-right: 5.2083vw;
+}
+main .news .news-boxs .boxs-container .ne-boxs figure img {
+  width: 100%;
+}
+main .news .news-boxs .boxs-container .ne-boxs figure figcaption {
+  margin-top: 2.0833vw;
+}
+main .news .news-boxs .boxs-container .ne-boxs figure figcaption p.boxs-name {
+  font-family: "NEXON-Gothic";
+  font-weight: bold;
+  font-size: 0.6771vw;
+  margin-bottom: 1.5625vw;
+}
+main .news .news-boxs .boxs-container .ne-boxs figure figcaption p.boxs-name span {
+  font-size: 0.7292vw;
+  font-weight: normal;
+  color: #aeaeae;
+  padding-left: 0.3646vw;
+}
+main .news .news-boxs .boxs-container .ne-boxs figure figcaption p.boxs-text {
+  font-weight: bold;
+  font-size: 1.05vw;
+  color: #191b1d;
+  margin-bottom: 1.2229vw;
+}
+main .news .news-boxs .boxs-container .ne-boxs figure figcaption p.boxs-plus {
+  color: #888;
+  font-size: 0.7813vw;
 }/*# sourceMappingURL=index.css.map */

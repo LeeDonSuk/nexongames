@@ -1,6 +1,7 @@
 @import "./common/header";
 @import "./common/reset";
 @import "./common/footer";
+@import "_mixin";
 
 main {
     .banner-wrap {
@@ -12,6 +13,7 @@ main {
         .slide-wrap {
             display: flex;
             width: 100%;
+            transition: 0.5s;
             .banner-slide {
                 width: 100%;
                 flex: 0 0 100%;
@@ -27,7 +29,7 @@ main {
             }
         }
         .slide-controlls {
-            width: 100%;
+            width: 90%;
             height: 90px;
             max-width: 1280px;
             position: absolute;
@@ -52,7 +54,242 @@ main {
                     width: calc(100% / 4);
                     height: 2px;
                     background-color: white;
+                    transition: 0.5s;
                     &.active {
+                    }
+                }
+            }
+            .slide-number {
+                text-align: right;
+                .number-data {
+                    font-size: 0.8vw;
+                    color: white;
+                    margin-top: 1vw;
+                }
+            }
+        }
+    }
+    .introduction {
+        width: 90%;
+        @include greed;
+        .in-title {
+            text-align: center;
+            margin-top: 4.6875vw;
+            margin-bottom: 4.5313vw;
+            h1 {
+                font-family: "NEXON-Gothic";
+                font-weight: 300;
+                font-size: 2.9688vw;
+            }
+            h2 {
+                font-family: "NEXON-Bold";
+                font-size: 3.4896vw;
+            }
+            .in-deco {
+                width: 1px;
+                height: 2.6042vw;
+                margin: 2.4479vw auto;
+                background-color: black;
+                text-align: center;
+            }
+        }
+        .in-flex {
+            figure {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                img {
+                    width: 60%;
+                }
+                figcaption {
+                    @include Gothic;
+                    font-weight: bold;
+                    width: 40%;
+                    font-size: 1.4583vw;
+                    p {
+                        margin-bottom: 2.8646vw;
+                    }
+                }
+            }
+        }
+    }
+    .producer {
+        position: relative;
+        overflow: hidden;
+        @include secheigth;
+        .producerback {
+            width: 100%;
+            position: absolute;
+            z-index: -99;
+            top: -8.7708vw;
+        }
+        .producer-title {
+            @include greed;
+            padding-top: 12.8646vw;
+            font-size: 3vw;
+            padding-bottom: 2.9688vw;
+        }
+        .transform-controlls {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            bottom: 14.5833vw;
+            right: 20.8333vw;
+            z-index: 99;
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 1.0417vw;
+                @include bold;
+                &.transfrom-deco {
+                    color: #dddddd;
+                    margin-left: 0.7813vw;
+                    margin-right: 0.7813vw;
+                }
+            }
+            .trnasform-prev {
+                transition: 0.5s;
+                p {
+                    span {
+                        margin-right: 0.6771vw;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(-10px);
+                }
+            }
+            .trnasform-next {
+                transition: 0.5s;
+                p {
+                    span {
+                        margin-left: 0.6771vw;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(10px);
+                }
+            }
+        }
+        .swiper {
+            width: 100%;
+            @include greed;
+            height: 100%;
+            .swiper-slide {
+                figure {
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 294px;
+                    }
+                    figcaption {
+                        margin-left: 5.2083vw;
+                        p {
+                            &.p-title {
+                                color: #cad401;
+                                font-size: 0.9375vw;
+                                margin-bottom: 1.25vw;
+                            }
+                            &.p-name {
+                                font-size: 2.3438vw;
+                                margin-bottom: 2.8021vw;
+                                span {
+                                    font-size: 0.8854vw;
+                                    color: #999999;
+                                    padding-left: 0.4688vw;
+                                }
+                            }
+                            &.promotion {
+                                font-size: 1.4583vw;
+                                margin-bottom: 0.9896vw;
+                            }
+                            &.comment {
+                                font-size: 0.8333vw;
+                                padding-left: 0.9375vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .news {
+        @include greed;
+        .news-title {
+            h1 {
+                font-size: 3.3854vw;
+            }
+            padding-bottom: 4.1667vw;
+            .ne-more {
+                text-align: right;
+                transition: 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(10px);
+                }
+                mark {
+                    width: 3.0208vw;
+                    align-items: center;
+                    font-size: 1.25vw;
+                    background: none;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 90%;
+                        height: 50%;
+                        position: absolute;
+                        background-color: #007aff;
+                        left: 0;
+                        bottom: 0;
+                        opacity: 0.8;
+                        z-index: -1;
+                    }
+                }
+                span {
+                    vertical-align: middle;
+                }
+            }
+        }
+        .news-boxs {
+            .boxs-container {
+                width: 100%;
+                display: flex;
+                .ne-boxs {
+                    width: calc(100% / 3);
+                    margin-right: 5.2083vw;
+                    figure {
+                        img {
+                            width: 100%;
+                        }
+                        figcaption {
+                            margin-top: 2.0833vw;
+                            p {
+                                &.boxs-name {
+                                    @include Gothic;
+                                    font-weight: bold;
+                                    font-size: 0.6771vw;
+                                    margin-bottom: 1.5625vw;
+                                    span {
+                                        font-size: 0.7292vw;
+                                        font-weight: normal;
+                                        color: #aeaeae;
+                                        padding-left: 0.3646vw;
+                                    }
+                                }
+                                &.boxs-text {
+                                    font-weight: bold;
+                                    font-size: 1.05vw;
+                                    color: #191b1d;
+                                    margin-bottom: 1.2229vw;
+                                }
+                                &.boxs-plus {
+                                    color: #888;
+                                    font-size: 0.7813vw;
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -581,10 +581,12 @@ main .producer .swiper .swiper-slide figure figcaption p.p-title {
   color: #cad401;
   font-size: 0.9375vw;
   margin-bottom: 1.25vw;
+  font-family: "NEXON-Bold";
 }
 main .producer .swiper .swiper-slide figure figcaption p.p-name {
   font-size: 2.3438vw;
   margin-bottom: 2.8021vw;
+  font-family: "NEXON-Bold";
 }
 main .producer .swiper .swiper-slide figure figcaption p.p-name span {
   font-size: 0.8854vw;
@@ -592,12 +594,26 @@ main .producer .swiper .swiper-slide figure figcaption p.p-name span {
   padding-left: 0.4688vw;
 }
 main .producer .swiper .swiper-slide figure figcaption p.promotion {
+  font-family: "NEXON-Bold";
   font-size: 1.4583vw;
   margin-bottom: 0.9896vw;
+  position: relative;
+}
+main .producer .swiper .swiper-slide figure figcaption p.promotion::after {
+  position: absolute;
+  content: "";
+  width: 66%;
+  height: 50%;
+  background: #e8e8e8;
+  position: absolute;
+  bottom: 0;
+  left: 2.5%;
+  z-index: -1;
 }
 main .producer .swiper .swiper-slide figure figcaption p.comment {
   font-size: 0.8333vw;
   padding-left: 0.9375vw;
+  line-height: 2;
 }
 main .news {
   max-width: 66.6667vw;

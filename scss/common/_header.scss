@@ -2,15 +2,19 @@ header {
     width: 100%;
     position: relative;
     .header-inner {
+        position: fixed;
+        top: 0;
+        z-index: 99;
         width: 100%;
         height: 70px;
         max-width: 1280px;
         margin: 0 auto;
-        background-color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+        left: 50%;
+        transform: translateX(-50%);
         .header-nav {
             nav {
                 ul {
@@ -133,13 +137,15 @@ header {
             }
             .mobile-navframe {
                 position: fixed;
-                top: 80px;
+                top: 70px;
                 right: 0;
                 width: 0%;
                 height: 100vh;
                 z-index: 9;
                 background-color: white;
                 transition: 0.3s;
+                opacity: 0;
+        transform: translateX(75px);
                 ul {
                     li {
                         line-height: 3.2;
@@ -160,6 +166,7 @@ header {
             &.active {
                 .mobile-navframe {
                     width: 75%;
+                    opacity: 1;
                 }
             }
         }
@@ -209,7 +216,7 @@ header {
             .header-nav {
                 display: none;
             }
-            .header-icon-nav{
+            .header-icon-nav {
                 margin-right: 50px;
             }
             .mobile-nav {

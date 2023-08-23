@@ -1,3 +1,4 @@
+@import "./common/media";
 @import "./common/header";
 @import "./common/reset";
 @import "./common/footer";
@@ -10,61 +11,51 @@ main {
         height: 100%;
         overflow: hidden;
         white-space: nowrap;
-        .slide-wrap {
-            display: flex;
+        margin-top: 70px;
+        .swiper {
             width: 100%;
-            transition: 0.5s;
-            .banner-slide {
-                width: 100%;
-                flex: 0 0 100%;
-                height: 100%;
+            height: 100%;
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 video {
+                    display: block;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
             }
-            &.active {
-                transform: translateX(-100%);
-            }
-        }
-        .slide-controlls {
-            width: 90%;
-            height: 90px;
-            max-width: 1280px;
-            position: absolute;
-            left: 50%;
-            bottom: 5%;
-            transform: translateX(-50%);
-            span {
+            .swiper-button-next {
+                position: absolute;
+                right: 5%;
                 color: white;
-                font-size: 31px;
-                display: block;
-                text-align: right;
-                margin-bottom: 10px;
-                &:hover {
-                    cursor: pointer;
+                &::after {
+                    font-size: 1.0417vw;
+                    font-weight: bold;
                 }
             }
-            .slide-progressbar {
-                width: 100%;
+            .swiper-button-prev {
+                position: absolute;
+                left: 5%;
+                color: white;
+                &::after {
+                    font-size: 1.0417vw;
+                    font-weight: bold;
+                }
+            }
+            .swiper-progress {
+                width: 90%;
                 height: 2px;
-                background-color: rgba(255, 255, 255, 0.293);
-                .silide-progressinner {
-                    width: calc(100% / 4);
-                    height: 2px;
-                    background-color: white;
-                    transition: 0.5s;
-                    &.active {
-                    }
-                }
-            }
-            .slide-number {
-                text-align: right;
-                .number-data {
-                    font-size: 0.8vw;
-                    color: white;
-                    margin-top: 1vw;
+                top: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(211, 211, 211, 0.308);
+                .swiper-pagination-progressbar-fill {
+                    background-color: #fff;
                 }
             }
         }
@@ -72,6 +63,13 @@ main {
     .introduction {
         width: 90%;
         @include greed;
+        transition: 1s;
+        transform: translateY(100px);
+        opacity: 0;
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
         .in-title {
             text-align: center;
             margin-top: 4.6875vw;
@@ -118,6 +116,13 @@ main {
         position: relative;
         overflow: hidden;
         @include secheigth;
+        transition: 1s;
+        transform: translateY(100px);
+        opacity: 0;
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
         .producerback {
             width: 100%;
             position: absolute;
@@ -181,7 +186,7 @@ main {
                 figure {
                     display: flex;
                     align-items: center;
-                    img{
+                    img {
                         width: 294px;
                     }
                     figcaption {
@@ -208,7 +213,7 @@ main {
                                 font-size: 1.4583vw;
                                 margin-bottom: 0.9896vw;
                                 position: relative;
-                                &::after{
+                                &::after {
                                     position: absolute;
                                     content: "";
                                     width: 66%;
@@ -219,14 +224,91 @@ main {
                                     left: 2.5%;
                                     z-index: -1;
                                 }
-                                
                             }
                             &.comment {
                                 font-size: 0.8333vw;
                                 padding-left: 0.9375vw;
                                 line-height: 2;
-                                in
-                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .news {
+            @include greed;
+            .news-title {
+                h1 {
+                    font-size: 3.3854vw;
+                }
+                padding-bottom: 4.1667vw;
+                .ne-more {
+                    text-align: right;
+                    transition: 0.5s;
+                    &:hover {
+                        cursor: pointer;
+                        transform: translateX(10px);
+                    }
+                    mark {
+                        width: 3.0208vw;
+                        align-items: center;
+                        font-size: 1.25vw;
+                        background: none;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            width: 90%;
+                            height: 50%;
+                            position: absolute;
+                            background-color: #007aff;
+                            left: 0;
+                            bottom: 0;
+                            opacity: 0.8;
+                            z-index: -1;
+                        }
+                    }
+                    span {
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .news-boxs {
+                .boxs-container {
+                    width: 100%;
+                    display: flex;
+                    .ne-boxs {
+                        width: calc(100% / 3);
+                        margin-right: 5.2083vw;
+                        figure {
+                            img {
+                                width: 100%;
+                            }
+                            figcaption {
+                                margin-top: 2.0833vw;
+                                p {
+                                    &.boxs-name {
+                                        @include Gothic;
+                                        font-weight: bold;
+                                        font-size: 0.6771vw;
+                                        margin-bottom: 1.5625vw;
+                                        span {
+                                            font-size: 0.7292vw;
+                                            font-weight: normal;
+                                            color: #aeaeae;
+                                            padding-left: 0.3646vw;
+                                        }
+                                    }
+                                    &.boxs-text {
+                                        font-weight: bold;
+                                        font-size: 1.05vw;
+                                        color: #191b1d;
+                                        margin-bottom: 1.2229vw;
+                                    }
+                                    &.boxs-plus {
+                                        color: #888;
+                                        font-size: 0.7813vw;
+                                    }
+                                }
                             }
                         }
                     }
@@ -236,6 +318,13 @@ main {
     }
     .news {
         @include greed;
+        transition: 1s;
+        transform: translateY(100px);
+        opacity: 0;
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
         .news-title {
             h1 {
                 font-size: 3.3854vw;
@@ -308,6 +397,201 @@ main {
                                     font-size: 0.7813vw;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .careers {
+        @include greed;
+        margin-top: 10.8333vw;
+        transition: 1s;
+        transform: translateY(100px);
+        opacity: 0;
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .ca-title {
+            padding-bottom: 6vw;
+            h1 {
+                @include bold;
+                font-size: 3.3854vw;
+            }
+            .ca-more {
+                text-align: right;
+                transition: 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(10px);
+                }
+                mark {
+                    width: 3.0208vw;
+                    align-items: center;
+                    font-size: 1.25vw;
+                    background: none;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 90%;
+                        height: 50%;
+                        position: absolute;
+                        background-color: #007aff;
+                        left: 0;
+                        bottom: 0;
+                        opacity: 0.8;
+                        z-index: -1;
+                    }
+                }
+                span {
+                    vertical-align: middle;
+                }
+            }
+        }
+        .ca-imgbox {
+            width: 100%;
+            position: relative;
+            margin-bottom: 9.375vw;
+            img {
+                width: 100%;
+            }
+            .ca-txtbox {
+                width: 34.1667vw;
+                position: absolute;
+                background-color: white;
+                bottom: 0;
+                padding: 1.5625vw;
+                p {
+                    font-size: 1.7708vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    main {
+        .producer {
+            .transform-controlls {
+                bottom: 80px;
+                p {
+                    font-size: 1.2164vw;
+                }
+            }
+            .swiper {
+                .swiper-slide {
+                    figure {
+                        figcaption {
+                            p.comment {
+                                font-size: 1.2164vw;
+                            }
+                        }
+                        img {
+                            width: 196px;
+                        }
+                    }
+                }
+            }
+        }
+        .news {
+            .news-boxs {
+                .boxs-container {
+                    .ne-boxs {
+                        margin-right: 1.2083vw;
+                        figure {
+                            figcaption {
+                                p {
+                                    &.boxs-name {
+                                        font-size: 1.0164vw;
+                                        span {
+                                            font-size: 0.86vw;
+                                        }
+                                    }
+                                    &.boxs-text {
+                                        line-height: 1.5;
+                                        font-size: 1.1728vw;
+                                    }
+                                    &.boxs-plus {
+                                        font-size: 1.0164vw;
+                                        line-height: 1.5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        .producer {
+            .transform-controlls {
+                bottom: 80px;
+                p {
+                    font-size: 1.2164vw;
+                }
+            }
+            .swiper {
+                .swiper-slide {
+                    figure {
+                        figcaption {
+                            p.comment {
+                                font-size: 1.2164vw;
+                            }
+                        }
+                        img {
+                            width: 19.1406vw;
+                        }
+                    }
+                }
+            }
+        }
+        .news {
+            .news-boxs {
+                .boxs-container {
+                    .ne-boxs {
+                        margin-right: 1.2083vw;
+                        figure {
+                            figcaption {
+                                p {
+                                    &.boxs-name {
+                                        font-size: 1.0164vw;
+                                        span {
+                                            font-size: 0.86vw;
+                                        }
+                                    }
+                                    &.boxs-text {
+                                        line-height: 1.5;
+                                        font-size: 1.1728vw;
+                                    }
+                                    &.boxs-plus {
+                                        font-size: 1.0164vw;
+                                        line-height: 1.5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .producer {
+            .transform-controlls {
+                bottom: 9.5833vw;
+            }
+            .swiper {
+                .swiper-slide {
+                    figure {
+                        img {
+                            width: 15.1406vw;
                         }
                     }
                 }

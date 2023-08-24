@@ -1,0 +1,195 @@
+main {
+    &.nexongames-page {
+        .banner {
+            margin-top: 70px;
+            position: relative;
+            > img {
+                width: 100%;
+            }
+            .bn-title {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                figure {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 10px;
+                    }
+                    figcaption {
+                        color: white;
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .bn-text {
+                position: absolute;
+                top: 35%;
+                left: 30%;
+                transform: (-50%, -50%);
+                color: white;
+                h1 {
+                    font-size: 3.4375vw;
+                    @include bold;
+                    padding-bottom: 23px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 1.875vw;
+                    text-align: center;
+                    line-height: 2;
+                    @include light;
+                }
+            }
+        }
+        .vision {
+            @include greed;
+            margin-top: 5.1563vw;
+            .vs-title {
+                > p {
+                    font-size: 1.4583vw;
+                    line-height: 1.8;
+                    text-align: center;
+                    @include light;
+                }
+                p {
+                    &.vs-deco {
+                        @include deco;
+                    }
+                    &.vs-subtitle {
+                        margin-top: 1.3021vw;
+                        font-size: 3.4375vw;
+                        padding-bottom: 4.4271vw;
+                        @include bold;
+                    }
+                }
+            }
+            .vs-content {
+                width: 100%;
+                background-image: url(../imgs/nexongames/banner/sub_visual_bg_dark.jpg);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+                padding: 11.9792vw 0;
+                .line-title {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    justify-content: center;
+                    .line-text {
+                        margin-left: 2.2396vw;
+                        margin-right: 2.2396vw;
+                        font-size: 2.8646vw;
+                    }
+                    .line {
+                        display: inline-block;
+                        width: 11.5104vw;
+                        height: 1px;
+                        background-color: white;
+                    }
+                }
+                > p {
+                    color: white;
+                    text-align: center;
+                    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
+                    font-size: 1.4583vw;
+                    line-height: 1.5;
+                    margin-top: 1.4583vw;
+                }
+            }
+        }
+        .games {
+            @include greed;
+            .gm-title {
+                margin-top: 9.1667vw;
+                h1 {
+                    text-align: center;
+                    padding-bottom: 0.7813vw;
+                    font-size: 4.5vw;
+                    @include bold;
+                }
+                p{
+                    &.gm-deco{
+                        @include deco;
+                        margin-bottom: 0.7813vw;
+                        margin-top: 0.7813vw;
+                    }
+                }
+            }
+            .games-wrap {
+                .game-box {
+                    .gm-box {
+                        margin-bottom: 5.2083vw;
+                        figure {
+                            display: flex;
+                            align-items: center;
+                            img {
+                                width: 13.5417vw;
+                            }
+                            figcaption {
+                                padding-left: 4vw;
+                                p {
+                                    span.bold {
+                                        display: inline-block;
+                                        margin-top: 10px;
+                                        line-height: 1.4;
+                                        @include bold;
+                                        color: black;
+                                    }
+                                    &.g-title {
+                                        a {
+                                            @include bold;
+                                            font-size: 4vw;
+                                            padding: 0 0.5vw;
+                                            margin-bottom: 1.5vw;
+                                            @include textdeco;
+                                        }
+                                        padding-bottom: 10px;
+                                    }
+                                    &.g-crape {
+                                        color: #666666;
+                                        margin-bottom: 1.5vw;
+                                        font-size: 1.5vw;
+                                    }
+                                    &.g-connect {
+                                        color: #666666;
+                                        font-size: 1.5vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .gm-right {
+                        figure {
+                            justify-content: right;
+                            figcaption {
+                                padding-left: 0;
+                                padding-right: 4vw;
+                                text-align: right;
+                            }
+                        }
+                    }
+                    .gm-box2 {
+                        text-align: center;
+                        figure {
+                            figcaption {
+                                p {
+                                    text-align: right;
+                                    &.g-title {
+                                        background: none;
+                                        a {
+                                            @include textdeco;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

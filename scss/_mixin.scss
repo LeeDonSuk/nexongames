@@ -14,3 +14,24 @@
 @mixin Gothic {
     font-family: "NEXON-Gothic";
 }
+@mixin deco{
+    width: 1px;
+    height: 50px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 3.6458vw;
+}
+@mixin textdeco{
+    position: relative;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        background-color: #e8e8e8;
+        z-index: -1;
+    }
+}

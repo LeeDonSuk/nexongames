@@ -1,8 +1,6 @@
 @import "./common/media";
-@import "./common/header";
-@import "./common/reset";
-@import "./common/footer";
 @import "_mixin";
+@import "./nexongames";
 
 main {
     .banner-wrap {
@@ -580,7 +578,6 @@ main {
         }
     }
 }
-
 @media (max-width: 768px) {
     main {
         .producer {

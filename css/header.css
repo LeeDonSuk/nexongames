@@ -199,25 +199,4 @@ header:hover .header-inner .header-nav nav ul li .drop-menu > li {
     transition: 0.5s;
     height: 0px;
   }
-}
-@media (max-width: 1300px) {
-  header .header-inner {
-    background-color: white;
-  }
-  header .header-inner .header-nav {
-    display: none;
-  }
-  header .header-inner .header-icon-nav {
-    margin-right: 50px;
-  }
-  header .header-inner .mobile-nav {
-    width: 40px;
-    display: block;
-    position: absolute;
-    right: 0;
-  }
-  header:hover .dropdown-frame {
-    transition: 0.5s;
-    height: 0px;
-  }
 }/*# sourceMappingURL=header.css.map */

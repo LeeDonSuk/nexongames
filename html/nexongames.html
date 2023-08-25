@@ -15,10 +15,15 @@
     <link rel="stylesheet" href="../scss/css/header.css">
     <link rel="stylesheet" href="../scss/css/footer.css">
     <link rel="stylesheet" href="../scss/css/reset.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/sub.css">
     <!-- jquery -->
     <!-- jquery -->
     <link rel="stylesheet" href="../js/code.jquery.com_jquery-3.7.0.js">
+    <!-- 카카오맵 -->
+    <!-- 카카오맵 -->
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e7fb07cb4a7958d7c864f7641458af26&libraries=services"></script>
+    <script defer src="../js/sub/nexongames.js"></script>
     <!-- favicon -->
     <!-- favicon -->
     <link rel="shortcut icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
@@ -26,9 +31,6 @@
     <!-- 구글폰트 -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
-
-
 </head>
 
 <body>
@@ -231,7 +233,51 @@
                 </div>
             </div>
         </section>
-        <section class="contactus"></section>
+        <section class="contactus">
+            <div class="cn-title">
+                <h1>CONTACT US</h1>
+                <div class="contact">
+                    <figure class="email">
+                        <a href="mailto:contact_us@nexongames.co.kr">
+                            <img src="../imgs/nexongames/icon/mail_icon.png" alt="email.png">
+                        </a>
+                        <figcaption>
+                            <a href="mailto:contact_us@nexongames.co.kr">
+                                contact_us@nexongames.co.kr
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="cell">
+                        <img src="../imgs/nexongames/icon/call_icon.png" alt="call.png">
+                        <figcaption>
+                            02.6421.7777
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="map">
+                <div class="map-cotainer">
+                    <div class="map-inner">
+                        <div class="map-title">
+                            <h2>넥슨게임즈 SEOUL</h2>
+                            <p>서울특별시 강남구 남부순환로 2621 디앤오 강남빌딩 5층</p>
+                            <p class="mobile-map">
+                                <a href="http://kko.to/D1AxB7aWV7" target="_self">
+                                    길 찾기 바로가기
+                                </a>
+                            </p>
+                        </div>
+                        <div class="map-frame">
+                        </div>
+                        <div class="custom-btn">
+                            <button class="zoomin" onclick="zoomIn(map)">+</button>
+                            <button class="zoomout" onclick="zoomOut(map)">-</button>
+                            <button class="mapreset" onclick="resetMap(initMap, map)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>

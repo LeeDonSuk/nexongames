@@ -1,0 +1,168 @@
+header {
+    .header-inner {
+        .header-logo {
+            h1 {
+                a {
+                    &::after {
+                        content: "";
+                        width: 133px;
+                        height: 42px;
+                        display: inline-block;
+                        background-image: url(../../imgs/v4/logo/nexon_v4_logo.png);
+                        background-repeat: no-repeat;
+                        background-position: center top;
+                        background-size: cover;
+                    }
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .header-icon-nav {
+            h1 {
+                &:nth-of-type(1) {
+                    img {
+                        display: none;
+                    }
+                    a {
+                        text-align: right;
+                        &::after {
+                            margin-top: 25px;
+
+                            content: "Blog";
+                            width: 133px;
+                            height: 42px;
+                            color: white;
+                            display: inline-block;
+                            font-size: 1vw;
+                        }
+                    }
+                }
+                button {
+                    color: white;
+                    background-color: gray;
+                    @include bold;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .header-nav {
+            nav {
+                ul {
+                    li {
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+main {
+    &.v4-page {
+        background-color: #191b1d;
+        section {
+            width: 95%;
+            margin: 0 auto;
+            &.banner {
+                padding-top: 70px;
+                .banner-inner {
+                    height: 31.7708vw;
+                    background-image: url(../../imgs/v4/background/start_banner_background.png);
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: cover;
+                    .banner-title {
+                        color: white;
+                        padding: 6.7708vw 0;
+                        width: 80%;
+                        margin: 0 auto;
+                        h2 {
+                            font-size: 3.6458vw;
+                            @include bold;
+                        }
+                        h6 {
+                            font-size: 20px;
+                            opacity: 0;
+                            height: 10.6771vw;
+                        }
+                        > p {
+                            font-size: 0.9375vw;
+                            @include bold;
+                            opacity: 0.4;
+                            span {
+                                margin-left: 1.875vw;
+                                margin-right: 1.875vw;
+                            }
+                        }
+                    }
+                }
+            }
+            &.text-banner {
+                margin-top: 5.5208vw;
+                figure {
+                    display: flex;
+                    position: relative;
+                    justify-content: right;
+                    img {
+                        width: 85%;
+                    }
+                    figcaption {
+                        color: white;
+                        font-size: 1.5625vw;
+                        @include light;
+                        line-height: 1.5;
+                        position: absolute;
+                        width: 33.25vw;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        .border-text {
+                            font-size: 2.291666666666667vw;
+                            border-bottom: 1px solid #fff;
+                            @include bold;
+                        }
+                    }
+                }
+            }
+            &.text-banner2 {
+                margin-top: 5.5208vw;
+                figure {
+                    display: flex;
+                    position: relative;
+                    justify-content: left;
+                    img {
+                        width: 85%;
+                    }
+                    figcaption {
+                        color: white;
+                        font-size: 1.5625vw;
+                        @include light;
+                        line-height: 1.5;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        p {
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.5625vw;
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 1.0417vw;
+                                height: 1.0417vw;
+                                margin-right: 1.0417vw;
+                                background: url(../../imgs/v4/icon/list_check.png) no-repeat center;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -235,3 +235,29 @@ header {
         }
     }
 }
+
+@media (max-width: 1300px) {
+    header {
+        .header-inner {
+            background-color: white;
+            .header-nav {
+                display: none;
+            }
+            .header-icon-nav {
+                margin-right: 50px;
+            }
+            .mobile-nav {
+                width: 40px;
+                display: block;
+                position: absolute;
+                right: 0;
+            }
+        }
+        &:hover {
+            .dropdown-frame {
+                transition: 0.5s;
+                height: 0px;
+            }
+        }
+    }
+}

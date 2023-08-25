@@ -1,0 +1,558 @@
+main.nexongames-page .banner {
+  margin-top: 70px;
+  position: relative;
+}
+main.nexongames-page .banner > img {
+  width: 100%;
+}
+main.nexongames-page .banner .bn-title {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+main.nexongames-page .banner .bn-title figure {
+  display: flex;
+  align-items: center;
+}
+main.nexongames-page .banner .bn-title figure img {
+  margin-right: 10px;
+}
+main.nexongames-page .banner .bn-title figure figcaption {
+  color: white;
+}
+main.nexongames-page .banner .bn-title figure figcaption a {
+  color: white;
+}
+main.nexongames-page .banner .bn-text {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  transform: -50%, -50%;
+  color: white;
+}
+main.nexongames-page .banner .bn-text h1 {
+  font-size: 3.4375vw;
+  font-family: "NEXON-Bold";
+  padding-bottom: 23px;
+  text-align: center;
+}
+main.nexongames-page .banner .bn-text p {
+  font-size: 1.875vw;
+  text-align: center;
+  line-height: 2;
+  font-family: "NEXON-Light";
+}
+main.nexongames-page .vision {
+  max-width: 66.6667vw;
+  margin: 0 auto;
+  margin-top: 5.1563vw;
+}
+main.nexongames-page .vision .vs-title > p {
+  font-size: 1.4583vw;
+  line-height: 1.8;
+  text-align: center;
+  font-family: "NEXON-Light";
+}
+main.nexongames-page .vision .vs-title p.vs-deco {
+  width: 1px;
+  height: 50px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 3.6458vw;
+}
+main.nexongames-page .vision .vs-title p.vs-subtitle {
+  margin-top: 1.3021vw;
+  font-size: 3.4375vw;
+  padding-bottom: 4.4271vw;
+  font-family: "NEXON-Bold";
+}
+main.nexongames-page .vision .vs-content {
+  width: 100%;
+  background-image: url(../imgs/nexongames/banner/sub_visual_bg_dark.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 11.9792vw 0;
+}
+main.nexongames-page .vision .vs-content .line-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+main.nexongames-page .vision .vs-content .line-title .line-text {
+  margin-left: 2.2396vw;
+  margin-right: 2.2396vw;
+  font-size: 2.8646vw;
+}
+main.nexongames-page .vision .vs-content .line-title .line {
+  display: inline-block;
+  width: 11.5104vw;
+  height: 1px;
+  background-color: white;
+}
+main.nexongames-page .vision .vs-content > p {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
+  font-size: 1.4583vw;
+  line-height: 1.5;
+  margin-top: 1.4583vw;
+}
+main.nexongames-page .games {
+  max-width: 66.6667vw;
+  margin: 0 auto;
+}
+main.nexongames-page .games .gm-title {
+  margin-top: 9.1667vw;
+}
+main.nexongames-page .games .gm-title h1 {
+  text-align: center;
+  padding-bottom: 0.7813vw;
+  font-size: 4.5vw;
+  font-family: "NEXON-Bold";
+}
+main.nexongames-page .games .gm-title p.gm-deco {
+  width: 1px;
+  height: 50px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 3.6458vw;
+  margin-bottom: 0.7813vw;
+  margin-top: 0.7813vw;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box {
+  margin-bottom: 5.2083vw;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure {
+  display: flex;
+  align-items: center;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure img {
+  width: 13.5417vw;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure figcaption {
+  padding-left: 4vw;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure figcaption p span.bold {
+  display: inline-block;
+  margin-top: 10px;
+  line-height: 1.4;
+  font-family: "NEXON-Bold";
+  color: black;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure figcaption p.g-title {
+  padding-bottom: 10px;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure figcaption p.g-title a {
+  font-family: "NEXON-Bold";
+  font-size: 4vw;
+  padding: 0 0.5vw;
+  margin-bottom: 1.5vw;
+  position: relative;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure figcaption p.g-title a::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  background-color: #e8e8e8;
+  z-index: -1;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure figcaption p.g-crape {
+  color: #666666;
+  margin-bottom: 1.5vw;
+  font-size: 1.5vw;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box figure figcaption p.g-connect {
+  color: #666666;
+  font-size: 1.5vw;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-right figure {
+  justify-content: right;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-right figure figcaption {
+  padding-left: 0;
+  padding-right: 4vw;
+  text-align: right;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box2 {
+  text-align: center;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box2 figure figcaption p {
+  text-align: right;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box2 figure figcaption p.g-title {
+  background: none;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box2 figure figcaption p.g-title a {
+  position: relative;
+}
+main.nexongames-page .games .games-wrap .game-box .gm-box2 figure figcaption p.g-title a::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  background-color: #e8e8e8;
+  z-index: -1;
+}
+main.nexongames-page .contactus {
+  margin-top: 12.6563vw;
+}
+main.nexongames-page .contactus .cn-title {
+  max-width: 66.6667vw;
+  margin: 0 auto;
+  margin-bottom: 2.3438vw;
+}
+main.nexongames-page .contactus .cn-title h1 {
+  text-align: center;
+  font-size: 4.5vw;
+  padding-bottom: 1.7188vw;
+  font-family: "NEXON-Bold";
+}
+main.nexongames-page .contactus .cn-title .contact {
+  display: flex;
+  justify-content: center;
+}
+main.nexongames-page .contactus .cn-title .contact figure {
+  display: flex;
+  align-items: center;
+}
+main.nexongames-page .contactus .cn-title .contact figure img {
+  margin-right: 0.5vw;
+}
+main.nexongames-page .contactus .cn-title .contact figure.email {
+  margin-right: 1.3021vw;
+}
+main.nexongames-page .contactus .cn-title .contact figure figcaption {
+  font-family: "NEXON-Gothic";
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+main.nexongames-page .contactus .cn-title .contact figure figcaption a {
+  font-family: "NEXON-Gothic";
+  font-weight: bold;
+  font-size: 1.4vw;
+}
+main.nexongames-page .contactus .map {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 5.2083vw 2.6563vw;
+}
+main.nexongames-page .contactus .map .map-cotainer {
+  max-width: 66.6667vw;
+  margin: 0 auto;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner {
+  width: 50%;
+  position: relative;
+  max-width: 66.6667vw;
+  margin: 0 auto;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title h2 {
+  font-family: "NEXON-Bold";
+  text-align: center;
+  font-size: 3vw;
+  white-space: nowrap;
+  padding-bottom: 1.0417vw;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title p {
+  font-family: "NEXON-Gothic";
+  font-weight: bold;
+  font-size: 1.4vw;
+  padding-bottom: 1.0417vw;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title p.mobile-map {
+  display: none;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .map-frame {
+  width: 434px;
+  height: 15.625vw;
+  margin: 0 auto;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index: 99;
+  color: black;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn button {
+  font-family: "NEXON-Bold";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid rgba(102, 102, 102, 0.1529411765);
+  font-size: 1vw;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn button:hover {
+  cursor: pointer;
+}
+main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn button.mapreset {
+  background-image: url(../../imgs/nexongames/icon/Reset_Button.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1280px) {
+  main.nexongames-page .contactus {
+    margin-top: 12.6563vw;
+  }
+  main.nexongames-page .contactus .cn-title {
+    max-width: 66.6667vw;
+    margin: 0 auto;
+    margin-bottom: 2.3438vw;
+  }
+  main.nexongames-page .contactus .cn-title h1 {
+    text-align: center;
+    font-size: 4.5vw;
+    padding-bottom: 1.7188vw;
+    font-family: "NEXON-Bold";
+  }
+  main.nexongames-page .contactus .cn-title .contact {
+    display: flex;
+    justify-content: center;
+  }
+  main.nexongames-page .contactus .cn-title .contact figure {
+    display: flex;
+    align-items: center;
+  }
+  main.nexongames-page .contactus .cn-title .contact figure img {
+    margin-right: 0.5vw;
+  }
+  main.nexongames-page .contactus .cn-title .contact figure.email {
+    margin-right: 1.3021vw;
+  }
+  main.nexongames-page .contactus .cn-title .contact figure figcaption {
+    font-family: "NEXON-Gothic";
+    font-weight: bold;
+    padding-bottom: 3px;
+  }
+  main.nexongames-page .contactus .cn-title .contact figure figcaption a {
+    font-family: "NEXON-Gothic";
+    font-weight: bold;
+    font-size: 1.4vw;
+  }
+  main.nexongames-page .contactus .map {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 5.2083vw 2.6563vw;
+  }
+  main.nexongames-page .contactus .map .map-cotainer {
+    max-width: 66.6667vw;
+    margin: 0 auto;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner {
+    width: 50%;
+    position: relative;
+    max-width: 66.6667vw;
+    margin: 0 auto;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title h2 {
+    font-family: "NEXON-Bold";
+    text-align: center;
+    font-size: 3vw;
+    white-space: nowrap;
+    padding-bottom: 1.0417vw;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title p {
+    font-family: "NEXON-Gothic";
+    font-weight: bold;
+    font-size: 1.4vw;
+    padding-bottom: 1.0417vw;
+    white-space: nowrap;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title p.mobile-map {
+    display: block;
+    text-align: center;
+    padding-top: 1.0417vw;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title p.mobile-map a {
+    width: 100%;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .map-title p.mobile-map a:hover {
+    opacity: 0.5;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .map-frame {
+    display: none;
+    width: 434px;
+    height: 15.625vw;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    color: black;
+    display: none;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn button {
+    font-family: "NEXON-Bold";
+    width: 30px;
+    height: 30px;
+    font-size: 2vw;
+    display: block;
+    background-color: #fff;
+    border: 1px solid rgba(102, 102, 102, 0.1529411765);
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn button:hover {
+    cursor: pointer;
+  }
+  main.nexongames-page .contactus .map .map-cotainer .map-inner .custom-btn button.mapreset {
+    background-image: url(../../imgs/nexongames/icon/Reset_Button.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+header .header-inner .header-logo h1 a::after {
+  content: "";
+  width: 133px;
+  height: 42px;
+  display: inline-block;
+  background-image: url(../../imgs/v4/logo/nexon_v4_logo.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+header .header-inner .header-logo h1 a img {
+  display: none;
+}
+header .header-inner .header-icon-nav h1:nth-of-type(1) img {
+  display: none;
+}
+header .header-inner .header-icon-nav h1:nth-of-type(1) a {
+  text-align: right;
+}
+header .header-inner .header-icon-nav h1:nth-of-type(1) a::after {
+  margin-top: 25px;
+  content: "Blog";
+  width: 133px;
+  height: 42px;
+  color: white;
+  display: inline-block;
+  font-size: 1vw;
+}
+header .header-inner .header-icon-nav h1 button {
+  color: white;
+  background-color: gray;
+  font-family: "NEXON-Bold";
+  margin-bottom: 10px;
+}
+header .header-inner .header-nav nav ul li a {
+  color: white;
+}
+
+main.v4-page {
+  background-color: #191b1d;
+}
+main.v4-page section {
+  width: 95%;
+  margin: 0 auto;
+}
+main.v4-page section.banner {
+  padding-top: 70px;
+}
+main.v4-page section.banner .banner-inner {
+  height: 31.7708vw;
+  background-image: url(../../imgs/v4/background/start_banner_background.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+main.v4-page section.banner .banner-inner .banner-title {
+  color: white;
+  padding: 6.7708vw 0;
+  width: 80%;
+  margin: 0 auto;
+}
+main.v4-page section.banner .banner-inner .banner-title h2 {
+  font-size: 3.6458vw;
+  font-family: "NEXON-Bold";
+}
+main.v4-page section.banner .banner-inner .banner-title h6 {
+  font-size: 20px;
+  opacity: 0;
+  height: 10.6771vw;
+}
+main.v4-page section.banner .banner-inner .banner-title > p {
+  font-size: 0.9375vw;
+  font-family: "NEXON-Bold";
+  opacity: 0.4;
+}
+main.v4-page section.banner .banner-inner .banner-title > p span {
+  margin-left: 1.875vw;
+  margin-right: 1.875vw;
+}
+main.v4-page section.text-banner {
+  margin-top: 5.5208vw;
+}
+main.v4-page section.text-banner figure {
+  display: flex;
+  position: relative;
+  justify-content: right;
+}
+main.v4-page section.text-banner figure img {
+  width: 85%;
+}
+main.v4-page section.text-banner figure figcaption {
+  color: white;
+  font-size: 1.5625vw;
+  font-family: "NEXON-Light";
+  line-height: 1.5;
+  position: absolute;
+  width: 33.25vw;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main.v4-page section.text-banner figure figcaption .border-text {
+  font-size: 2.2916666667vw;
+  border-bottom: 1px solid #fff;
+  font-family: "NEXON-Bold";
+}
+main.v4-page section.text-banner2 {
+  margin-top: 5.5208vw;
+}
+main.v4-page section.text-banner2 figure {
+  display: flex;
+  position: relative;
+  justify-content: left;
+}
+main.v4-page section.text-banner2 figure img {
+  width: 85%;
+}
+main.v4-page section.text-banner2 figure figcaption {
+  color: white;
+  font-size: 1.5625vw;
+  font-family: "NEXON-Light";
+  line-height: 1.5;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main.v4-page section.text-banner2 figure figcaption p {
+  display: flex;
+  align-items: center;
+  font-size: 1.5625vw;
+}
+main.v4-page section.text-banner2 figure figcaption p::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.0417vw;
+  height: 1.0417vw;
+  margin-right: 1.0417vw;
+  background: url(../../imgs/v4/icon/list_check.png) no-repeat center;
+  background-size: cover;
+}/*# sourceMappingURL=sub.css.map */

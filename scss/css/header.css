@@ -2,10 +2,100 @@ header {
   width: 100%;
   position: relative;
 }
+header .mobile-frame {
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  z-index: 99;
+  transition: 0.5s;
+}
+header .mobile-frame.active {
+  width: 75%;
+}
+header .mobile-frame ul {
+  display: block;
+}
+header .mobile-frame ul li {
+  padding: 10px;
+  border-top: 1px solid rgba(60, 97, 137, 0.2980392157);
+}
+header .mobile-frame ul li > a {
+  font-size: 1vw;
+  color: #3c6189;
+  font-family: "NEXON-Bold";
+  display: flex;
+  flex-direction: column;
+}
+header .mobile-frame ul li > a::after {
+  content: "";
+  transition: 0.5s;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  margin-top: 5px;
+}
+header .mobile-frame ul li:nth-of-type(5) {
+  border-bottom: 1px solid rgba(60, 97, 137, 0.2980392157);
+}
+header .mobile-frame ul li:hover {
+  background-color: #f3f3f3;
+}
+header .mobile-frame ul li:hover a::after {
+  width: 5%;
+}
+header .mobile-frame ul li:hover .drop-drop li {
+  height: 35px;
+  opacity: 1;
+}
+header .mobile-frame ul li:hover .drop-drop li a:hover::after {
+  width: 100%;
+}
+header .mobile-frame ul li .drop-drop {
+  transition: 0.5s;
+}
+header .mobile-frame ul li .drop-drop li {
+  padding: 0;
+  border: none;
+  height: 0px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+header .mobile-frame ul li .drop-drop li a {
+  font-family: "NEXON-Gothic";
+  color: black;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+header .mobile-frame ul li .drop-drop li a::after {
+  content: "";
+  transition: 0.5s;
+  width: 0%;
+  height: 2px;
+  background-color: #3c6189;
+  margin-top: 5px;
+}
+header .mobile-frame ul.closebtn {
+  text-align: right;
+  width: 100%;
+  height: 50px;
+}
+header .mobile-frame ul.closebtn span {
+  padding: 10px;
+  color: rgb(60, 97, 137);
+}
+header .mobile-frame ul.closebtn span:hover {
+  cursor: pointer;
+}
 header .header-inner {
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 90;
   width: 100%;
   height: 70px;
   max-width: 1280px;
@@ -31,7 +121,6 @@ header .header-inner .header-nav nav ul li:nth-of-type(5) {
 }
 header .header-inner .header-nav nav ul li a {
   width: 5vw;
-  font-family: "NEXON-Bold";
   font-size: 1vw;
   padding-bottom: 5px;
   text-align: center;
@@ -106,56 +195,22 @@ header .header-inner .header-icon-nav h1 button:hover {
   cursor: pointer;
   opacity: 0.7;
 }
-header .header-inner .mobile-nav {
+header .header-inner .header-icon-nav h1 g {
   display: none;
 }
-header .header-inner .mobile-nav g span {
-  display: block;
-  width: 30px;
+header .header-inner .header-icon-nav h1 g span {
+  width: 40px;
   height: 3px;
+  display: block;
   background-color: black;
-  margin-right: 10px;
-  margin-top: 5px;
-  transition: 0.5s;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-header .header-inner .mobile-nav:hover {
+header .header-inner .header-icon-nav h1 g span:nth-of-type(3) {
+  margin-bottom: 0;
+}
+header .header-inner .header-icon-nav h1 g:hover {
   cursor: pointer;
-}
-header .header-inner .mobile-nav:hover span:nth-of-type(1) {
-  transform: rotate(30deg);
-}
-header .header-inner .mobile-nav:hover span:nth-of-type(2) {
-  transform: rotate(-67deg) translateX(10px);
-}
-header .header-inner .mobile-nav .mobile-navframe {
-  position: fixed;
-  top: 70px;
-  right: 0;
-  width: 0%;
-  height: 100vh;
-  z-index: 9;
-  background-color: white;
-  transition: 0.3s;
-  opacity: 0;
-  transform: translateX(75px);
-}
-header .header-inner .mobile-nav .mobile-navframe ul li {
-  line-height: 3.2;
-  height: 50px;
-  border-top: 1px solid rgba(60, 97, 137, 0.2980392157);
-  padding-left: 20px;
-}
-header .header-inner .mobile-nav .mobile-navframe ul li a {
-  font-size: 1vw;
-  font-family: "NEXON-Gothic";
-  color: #3c6189;
-}
-header .header-inner .mobile-nav .mobile-navframe ul li:nth-of-type(5) {
-  border-bottom: 1px solid rgba(60, 97, 137, 0.2980392157);
-}
-header .header-inner .mobile-nav.active .mobile-navframe {
-  width: 75%;
-  opacity: 1;
 }
 header .dropdown-frame {
   position: absolute;
@@ -193,7 +248,14 @@ header:hover .header-inner .header-nav nav ul li .drop-menu > li {
     width: 40px;
     display: block;
     position: absolute;
+    top: 20px;
     right: 0;
+  }
+  header .header-inner .mobile-nav g span {
+    height: 4px;
+  }
+  header .header-inner .header-icon-nav h1 g {
+    display: block;
   }
   header:hover .dropdown-frame {
     transition: 0.5s;

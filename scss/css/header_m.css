@@ -1,0 +1,360 @@
+.mobile-frame {
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  z-index: 6;
+  transition: 0.5s;
+}
+.mobile-frame.active {
+  width: 75%;
+}
+.mobile-frame ul {
+  display: block;
+}
+.mobile-frame ul li {
+  padding: 10px;
+  border-top: 1px solid rgba(60, 97, 137, 0.2980392157);
+}
+.mobile-frame ul li > a {
+  font-size: 1vw;
+  color: #3c6189;
+  font-family: "NEXON-Bold";
+  display: flex;
+  flex-direction: column;
+}
+.mobile-frame ul li > a::after {
+  content: "";
+  transition: 0.5s;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  margin-top: 5px;
+}
+.mobile-frame ul li:nth-of-type(5) {
+  border-bottom: 1px solid rgba(60, 97, 137, 0.2980392157);
+}
+.mobile-frame ul li:hover {
+  background-color: #f3f3f3;
+}
+.mobile-frame ul li:hover a::after {
+  width: 5%;
+}
+.mobile-frame ul li:hover .drop-drop li {
+  height: 35px;
+  opacity: 1;
+}
+.mobile-frame ul li:hover .drop-drop li a:hover::after {
+  width: 100%;
+}
+.mobile-frame ul li .drop-drop {
+  transition: 0.5s;
+}
+.mobile-frame ul li .drop-drop li {
+  padding: 0;
+  border: none;
+  height: 0px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.mobile-frame ul li .drop-drop li a {
+  font-family: "NEXON-Gothic";
+  color: black;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-frame ul li .drop-drop li a::after {
+  content: "";
+  transition: 0.5s;
+  width: 0%;
+  height: 2px;
+  background-color: #3c6189;
+  margin-top: 5px;
+}
+.mobile-frame ul.closebtn {
+  text-align: right;
+  width: 100%;
+  height: 50px;
+}
+.mobile-frame ul.closebtn span {
+  padding: 10px;
+  color: rgb(60, 97, 137);
+}
+.mobile-frame ul.closebtn span:hover {
+  cursor: pointer;
+}
+
+.headerb-inner {
+  width: 100%;
+  height: 100px;
+  max-width: 1280px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+  padding: 10px;
+  background-color: rgba(25, 27, 29, 0.4509803922);
+}
+.headerb-inner .drop-frame {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 100px;
+  background-color: white;
+  z-index: -1;
+  transition: 0.25s;
+}
+.headerb-inner:hover {
+  transition: 0.5s;
+}
+.headerb-inner:hover .drop-frame {
+  height: 300px;
+}
+.headerb-inner:hover .menu-b ul li .drop-m {
+  display: flex;
+}
+.headerb-inner:hover .menu-b ul li .drop-m li {
+  height: 35px;
+}
+.headerb-inner .menu-b ul {
+  display: flex;
+  justify-content: space-between;
+}
+.headerb-inner .menu-b ul > li {
+  position: relative;
+  min-width: 60px;
+  margin-right: 80px;
+  text-align: center;
+}
+.headerb-inner .menu-b ul > li a {
+  color: white;
+  font-family: "NEXON-Gothic";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.0938vw;
+}
+.headerb-inner .menu-b ul > li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  border-radius: 50px;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+.headerb-inner .menu-b ul > li a:hover::after {
+  width: 100%;
+}
+.headerb-inner .menu-b ul > li .drop-m {
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  display: none;
+}
+.headerb-inner .menu-b ul > li .drop-m li {
+  min-width: 60px;
+  height: 0px;
+  white-space: nowrap;
+  text-align: left;
+}
+.headerb-inner .menu-b ul > li .drop-m li a {
+  color: black;
+  font-family: "NEXON-Gothic";
+  font-size: 1vw;
+}
+.headerb-inner .menu-b ul > li .drop-m li a::after {
+  content: "";
+  background-color: black;
+}
+.headerb-inner .icon-b ul {
+  display: flex;
+  align-items: center;
+}
+.headerb-inner .icon-b ul li:nth-of-type(1) {
+  margin-right: 50px;
+  padding-top: 5px;
+}
+.headerb-inner .icon-b ul li img {
+  width: 34px;
+  transition: 0.5s;
+}
+.headerb-inner .icon-b ul li img:hover {
+  transform: translateY(-10px);
+}
+.headerb-inner .icon-b ul li button {
+  background-color: white;
+  padding: 8px;
+  font-family: "NEXON-Bold";
+}
+.headerb-inner .icon-b ul li button:nth-of-type(1) {
+  transform: translateX(5px);
+  border-radius: 10px 0px 0px 10px;
+}
+.headerb-inner .icon-b ul li button:nth-of-type(2) {
+  border-radius: 0px 10px 10px 0px;
+}
+.headerb-inner .icon-b ul li button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.headerb-inner .icon-b ul li g {
+  display: none;
+}
+.headerb-inner .icon-b ul li g span {
+  width: 40px;
+  height: 3px;
+  display: block;
+  background-color: white;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.headerb-inner .icon-b ul li g span:nth-of-type(3) {
+  margin-bottom: 0;
+}
+.headerb-inner .icon-b ul li g:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .headerb-inner {
+    width: 100%;
+    height: 100px;
+    max-width: 1280px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headerb-inner .drop-frame {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .headerb-inner:hover .drop-frame {
+    height: 0px;
+  }
+  .headerb-inner:hover .menu-b ul li .drop-m {
+    display: flex;
+  }
+  .headerb-inner .menu-b {
+    display: none;
+  }
+  .headerb-inner .menu-b ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .headerb-inner .menu-b ul > li {
+    position: relative;
+    min-width: 60px;
+    margin-right: 80px;
+    text-align: center;
+  }
+  .headerb-inner .menu-b ul > li a {
+    color: white;
+    font-family: "NEXON-Gothic";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.0938vw;
+  }
+  .headerb-inner .menu-b ul > li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 5px;
+    transition: 0.5s;
+  }
+  .headerb-inner .menu-b ul > li a:hover::after {
+    width: 100%;
+  }
+  .headerb-inner .menu-b ul > li .drop-m {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    display: none;
+  }
+  .headerb-inner .menu-b ul > li .drop-m li {
+    min-width: 60px;
+    height: 35px;
+    white-space: nowrap;
+    text-align: left;
+  }
+  .headerb-inner .menu-b ul > li .drop-m li a {
+    color: black;
+    font-family: "NEXON-Gothic";
+    font-size: 1vw;
+  }
+  .headerb-inner .menu-b ul > li .drop-m li a::after {
+    content: "";
+    background-color: black;
+  }
+  .headerb-inner .icon-b ul {
+    display: flex;
+    align-items: center;
+  }
+  .headerb-inner .icon-b ul li:nth-of-type(1) {
+    margin-right: 50px;
+    padding-top: 5px;
+  }
+  .headerb-inner .icon-b ul li img {
+    width: 34px;
+    transition: 0.5s;
+  }
+  .headerb-inner .icon-b ul li img:hover {
+    transform: translateY(-10px);
+  }
+  .headerb-inner .icon-b ul li button {
+    background-color: white;
+    padding: 8px;
+    font-family: "NEXON-Bold";
+  }
+  .headerb-inner .icon-b ul li button:nth-of-type(1) {
+    transform: translateX(5px);
+    border-radius: 10px 0px 0px 10px;
+  }
+  .headerb-inner .icon-b ul li button:nth-of-type(2) {
+    border-radius: 0px 10px 10px 0px;
+  }
+  .headerb-inner .icon-b ul li button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .headerb-inner .icon-b ul li g {
+    display: block;
+  }
+  .headerb-inner .icon-b ul li g span {
+    width: 40px;
+    height: 3px;
+    display: block;
+    background-color: white;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .headerb-inner .icon-b ul li g span:nth-of-type(3) {
+    margin-bottom: 0;
+  }
+  .headerb-inner .icon-b ul li g:hover {
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=header_m.css.map */

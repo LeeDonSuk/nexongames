@@ -129,3 +129,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   v4opserver();
 });
+var swiper = new Swiper(".slide-slide", {
+  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+  spaceBetween: 30, // 슬라이드 사이의 간격
+  centeredSlides: true, // 현재 슬라이드를 가운데로 정렬
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+});

@@ -6,12 +6,15 @@ main {
     overflow: hidden;
     &.v4-page {
         background-color: #191b1d;
+        
         section {
             width: 95%;
             margin: 0 auto;
-            &.sudden-banner{
+            &.text-bsudden {
+                @include greed;
+            }
+            &.sudden-banner {
                 width: 100%;
-                padding-top: 0 !important;
             }
             &.banner {
                 padding-top: 100px;
@@ -26,6 +29,19 @@ main {
                         background-image: url(../../imgs/suddenattck/background/sudden_attack_b.jpg);
                         p {
                             &.suddenattack {
+                                color: white;
+                                opacity: 1;
+                                font-size: 1.25vw;
+                            }
+                        }
+                    }
+                    &.hit2-inner {
+                        background-image: url(../../imgs/Hit2/background/hit2.jpg);
+                    }
+                    &.blue-inner {
+                        background-image: url(../../imgs/bluearchive/background/blue_archive.jpg);
+                        p {
+                            &.bluearchive {
                                 color: white;
                                 opacity: 1;
                                 font-size: 1.25vw;
@@ -93,6 +109,19 @@ main {
                             font-size: 2.4042vw;
                             @include bold;
                         }
+                        hit {
+                            z-index: 99;
+                            position: absolute;
+                            font-size: 2.204166666666667vw;
+                            @include bold;
+                        }
+                    }
+                }
+                &.hit-img {
+                    figure {
+                        img {
+                            max-width: 100%;
+                        }
                     }
                 }
             }
@@ -141,16 +170,33 @@ main {
                                 content: "";
                                 display: none;
                             }
-                            &:nth-of-type(1){
+                            &:nth-of-type(1) {
                                 font-size: 2.6042vw;
                                 margin-bottom: 2.34375vw;
+                                @include bold;
                             }
+                        }
+                        hit {
+                            z-index: 99;
+                            font-size: 2.204166666666667vw;
+                            @include bold;
+                        }
+                    }
+                }
+                &.hit-img {
+                    figure {
+                        img {
+                            max-width: 100%;
+                        }
+                        figcaption {
+                            z-index: 50;
                         }
                     }
                 }
             }
             &.character {
                 height: 320px;
+                margin-top: 5.2083vw;
                 .swiper {
                     width: 100%;
                     height: 100%;
@@ -183,13 +229,14 @@ main {
                                 figure {
                                     width: 100%;
                                     position: absolute;
-                                    top: -50px;
+                                    top: -40px;
                                     left: 6px;
                                     img {
                                         width: 95%;
                                         margin-bottom: 10px;
                                     }
                                     figcaption {
+                                        transform: translateY(-10px);
                                         color: white;
                                         @include Gothic;
                                     }
@@ -206,11 +253,12 @@ main {
                 }
             }
             &.character-date {
-                margin-top: 7.2917vw;
+                @include greed;
                 padding-bottom: 7.2917vw;
                 width: 100%;
                 display: flex;
                 align-items: flex-end;
+                margin-top: 7.2917vw;
                 &.observed-element {
                     opacity: 0;
                     transition: 0.5s;
@@ -220,7 +268,6 @@ main {
                         transform: translateX(0px);
                     }
                 }
-                @include greed;
                 .char-name {
                     width: 34%;
                     .char-title {
@@ -273,6 +320,7 @@ main {
             }
             &.worldstory {
                 @include greed;
+                margin-bottom: 50px;
                 .observed-element {
                     transform: translateY(50px);
                     opacity: 0;
@@ -322,6 +370,12 @@ main {
                 }
             }
             &.playvid {
+                &.playvid-sudden {
+                    margin-top: 5.2083vw;
+                    video {
+                        width: 80%;
+                    }
+                }
                 @include greed;
                 text-align: center;
                 video {
@@ -415,9 +469,75 @@ main {
                         margin-right: 1.9792vw;
                     }
                 }
+                &.hit2-download {
+                    width: 85%;
+                    max-width: none;
+                    h1 {
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
             }
         }
     }
+&.Descendant-page{
+    section{
+        &.img-frame{
+            width: 95%;
+            margin: 5.2083vw auto;
+            text-align: center;
+            img{
+                width: 100%;
+            }
+        }
+        &.img-frame1{
+            width: 100%;
+            height: 31.7708vw;
+            margin-top: 100px;
+            background-image: url(../../imgs/Descendant/background/first_descendant.jpg);
+            background-repeat: no-repeat;
+            background-size: 95%;
+            background-position: center;
+        }
+        &.border-frame{
+            position: relative;
+            border-left: 1px solid white;
+            &::after{
+                content: '';
+                width: 1.145833333333333vw;
+                height: 1.145833333333333vw;
+                position: absolute;
+                background-color: #019fe8;
+                left: -0.5729166666666667vw;
+                top: 2.864583333333333vw;
+                border-radius: 50px;
+            }
+            &.border-frame2{
+                &::after{
+                    top: 50%;
+                }    
+            }
+            &.border-frame3{
+                &::after{
+                    top: 90%;
+                }    
+            }
+        }
+        &.Descendant-vid{
+            video{
+                width: 100%;
+            }
+        }
+        &.Descendant-download{
+            margin-top: 4.8438vw;
+            h1{
+                color: white;
+                font-size: 1.2500vw;
+                padding-bottom: 2.0833vw;
+            }
+        }
+    }
+}
 }
 
 @media (max-width: 1800px) {
@@ -459,6 +579,55 @@ main {
             section {
                 &.slide {
                     padding-bottom: 20.8438vw;
+                    .swiper {
+                        width: 100%;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.character-date {
+                    &.blue-character-date {
+                        flex-direction: column;
+                        max-width: none;
+                        padding-left: 20px;
+                        width: 90%;
+                        margin: 7.2917vw auto;
+                        .char-name {
+                            width: 100%;
+                            .char-title {
+                                width: 100%;
+                                text-align: left;
+                            }
+                        }
+                        .char-explanation {
+                            width: 100%;
+                            border-top: 1px solid white;
+                            padding-top: 20px;
+                            border-left: none;
+                            .char-ex {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+                &.playvid-sudden {
+                    max-width: none;
+                    video {
+                        height: auto;
+                        width: 100% !important;
+                    }
+                }
+                &.blue-vid {
+                    max-width: none;
+                    video {
+                        height: auto;
+                        width: 90% !important;
+                    }
                 }
                 &.download {
                     @include greed;
@@ -482,12 +651,363 @@ main {
                     }
                     .web-container {
                         margin-top: 1.1094vw;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .web {
+                            display: flex;
+                            align-items: center;
+                            div {
+                                margin-bottom: 1.9792vw;
+                            }
+                        }
+                    }
+                    &.v4-download {
+                        justify-content: center;
+                        max-width: none;
+                        flex-direction: column;
+                        h1 {
+                            text-align: left;
+                        }
+                        .app-container {
+                            .app {
+                                flex-direction: row;
+                            }
+                        }
+                        .web-container {
+                            margin: 0;
+                            h1 {
+                                width: 100%;
+                                text-align: left;
+                            }
+                            .web {
+                            }
+                        }
+                    }
+                    &.blue-download {
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        .web-container {
+                            margin: 0;
+                            .web {
+                            }
+                        }
+                        .app-container {
+                            .app {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 930px) {
+    main {
+        &.v4-page {
+            section {
+                &.slide {
+                    padding-bottom: 20.8438vw;
+                    .swiper {
+                        width: 100%;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.playvid-sudden {
+                    max-width: none;
+                    video {
+                        height: auto;
+                        width: 100% !important;
+                    }
+                }
+                &.download {
+                    @include greed;
+                    display: flex;
+                    align-items: flex-start;
+                    padding-bottom: 5.9896vw;
+                    max-width: none;
+                    width: 50%;
+                    margin: 0 auto;
+                    h1 {
+                        text-align: center;
+                        padding-right: 18px;
+                        color: white;
+                        @include bold;
+                        margin-bottom: 2.1094vw;
+                    }
+                    .app {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        div {
+                            margin-bottom: 1.9792vw;
+                        }
+                    }
+                    .web-container {
+                        margin-top: 1.1094vw;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         .web {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             div {
                                 margin-bottom: 1.9792vw;
+                            }
+                        }
+                    }
+                    &.v4-download {
+                        justify-content: center;
+                        max-width: none;
+                        flex-direction: row;
+                        width: 100%;
+                        h1 {
+                            text-align: left;
+                        }
+                        .app-container {
+                            .app {
+                                flex-direction: column;
+                            }
+                        }
+                        .web-container {
+                            margin: 0;
+                            h1 {
+                                width: 100%;
+                                text-align: left;
+                            }
+                            .web {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                    &.hit2-download {
+                        width: 85%;
+                        max-width: none;
+                        h1 {
+                            width: 100%;
+                            text-align: left;
+                        }
+                        .web-container {
+                            .web {
+                                flex-direction: row;
+                            }
+                        }
+                    }
+                    &.blue-download {
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: row;
+                        max-width: none;
+                        text-align: center;
+                        margin: 0;
+                        padding: 20px;
+                        width: 100%;
+                        .web-container {
+                            margin: 0;
+                            .web {
+                                flex-direction: column;
+                            }
+                        }
+                        .app-container {
+                            .app {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 801px) {
+    main {
+        &.v4-page {
+            section {
+                &.slide {
+                    &.hit2-slide {
+                        max-width: none;
+                        width: 85%;
+                    }
+                    padding-bottom: 20.8438vw;
+                    .swiper {
+                        width: 100%;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.playvid-sudden {
+                    max-width: none;
+                    video {
+                        height: auto;
+                        width: 100% !important;
+                    }
+                }
+                &.download {
+                    @include greed;
+                    display: flex;
+                    align-items: flex-start;
+                    padding-bottom: 5.9896vw;
+                    max-width: none;
+                    width: 50%;
+                    margin: 0 auto;
+                    h1 {
+                        text-align: center;
+                        padding-right: 18px;
+                        color: white;
+                        @include bold;
+                        margin-bottom: 2.1094vw;
+                    }
+                    .app {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        div {
+                            margin-bottom: 1.9792vw;
+                        }
+                    }
+                    .web-container {
+                        margin-top: 1.1094vw;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .web {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            div {
+                                margin-bottom: 1.9792vw;
+                            }
+                        }
+                    }
+                    &.blue-download {
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        max-width: none;
+                        margin: 0;
+                        padding: 20px;
+                        .web-container {
+                            margin: 0;
+                            .web {
+                                flex-direction: row;
+                            }
+                        }
+                        .app-container {
+                            .app {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                        }
+                    }
+                    &.hit2-download {
+                        width: 85%;
+                        max-width: none;
+                        h1 {
+                            width: 100%;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    main {
+        &.v4-page {
+            section {
+                &.slide {
+                    padding-bottom: 20.8438vw;
+                    .swiper {
+                        width: 100%;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.playvid-sudden {
+                    max-width: none;
+                    video {
+                        height: auto;
+                        width: 100% !important;
+                    }
+                }
+                &.download {
+                    @include greed;
+                    display: flex;
+                    align-items: flex-start;
+                    padding-bottom: 5.9896vw;
+                    max-width: none;
+                    width: 50%;
+                    margin: 0 auto;
+                    h1 {
+                        text-align: center;
+                        padding-right: 18px;
+                        color: white;
+                        @include bold;
+                        margin-bottom: 2.1094vw;
+                    }
+                    .app {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        div {
+                            margin-bottom: 1.9792vw;
+                        }
+                    }
+                    .web-container {
+                        margin-top: 1.1094vw;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .web {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            div {
+                                margin-bottom: 1.9792vw;
+                            }
+                        }
+                    }
+                    &.blue-download {
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: row;
+                        max-width: none;
+                        text-align: center;
+                        margin: 0;
+                        padding: 20px;
+                        width: 100%;
+                        .web-container {
+                            margin: 0;
+                            .web {
+                                flex-direction: column;
+                            }
+                        }
+                        .app-container {
+                            .app {
+                                display: flex;
+                                flex-direction: column;
                             }
                         }
                     }

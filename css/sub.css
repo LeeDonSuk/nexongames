@@ -428,9 +428,12 @@ main.v4-page section {
   width: 95%;
   margin: 0 auto;
 }
+main.v4-page section.text-bsudden {
+  max-width: 66.6667vw;
+  margin: 0 auto;
+}
 main.v4-page section.sudden-banner {
   width: 100%;
-  padding-top: 0 !important;
 }
 main.v4-page section.banner {
   padding-top: 100px;
@@ -447,6 +450,17 @@ main.v4-page section.banner .banner-inner.sudden-innder {
   background-image: url(../../imgs/suddenattck/background/sudden_attack_b.jpg);
 }
 main.v4-page section.banner .banner-inner.sudden-innder p.suddenattack {
+  color: white;
+  opacity: 1;
+  font-size: 1.25vw;
+}
+main.v4-page section.banner .banner-inner.hit2-inner {
+  background-image: url(../../imgs/Hit2/background/hit2.jpg);
+}
+main.v4-page section.banner .banner-inner.blue-inner {
+  background-image: url(../../imgs/bluearchive/background/blue_archive.jpg);
+}
+main.v4-page section.banner .banner-inner.blue-inner p.bluearchive {
   color: white;
   opacity: 1;
   font-size: 1.25vw;
@@ -513,6 +527,15 @@ main.v4-page section.text-banner figure figcaption.sudden-t-b1 {
   font-size: 2.4042vw;
   font-family: "NEXON-Bold";
 }
+main.v4-page section.text-banner figure figcaption hit {
+  z-index: 99;
+  position: absolute;
+  font-size: 2.2041666667vw;
+  font-family: "NEXON-Bold";
+}
+main.v4-page section.text-banner.hit-img figure img {
+  max-width: 100%;
+}
 main.v4-page section.text-banner2 {
   margin-top: 5.5208vw;
 }
@@ -563,9 +586,22 @@ main.v4-page section.text-banner2 figure figcaption .sudden-t-b2::before {
 main.v4-page section.text-banner2 figure figcaption .sudden-t-b2:nth-of-type(1) {
   font-size: 2.6042vw;
   margin-bottom: 2.34375vw;
+  font-family: "NEXON-Bold";
+}
+main.v4-page section.text-banner2 figure figcaption hit {
+  z-index: 99;
+  font-size: 2.2041666667vw;
+  font-family: "NEXON-Bold";
+}
+main.v4-page section.text-banner2.hit-img figure img {
+  max-width: 100%;
+}
+main.v4-page section.text-banner2.hit-img figure figcaption {
+  z-index: 50;
 }
 main.v4-page section.character {
   height: 320px;
+  margin-top: 5.2083vw;
 }
 main.v4-page section.character .swiper {
   width: 100%;
@@ -601,7 +637,7 @@ main.v4-page section.character .swiper .swiper-slide .swiper-background .backgro
 main.v4-page section.character .swiper .swiper-slide .swiper-background .background-character figure {
   width: 100%;
   position: absolute;
-  top: -50px;
+  top: -40px;
   left: 6px;
 }
 main.v4-page section.character .swiper .swiper-slide .swiper-background .background-character figure img {
@@ -609,6 +645,7 @@ main.v4-page section.character .swiper .swiper-slide .swiper-background .backgro
   margin-bottom: 10px;
 }
 main.v4-page section.character .swiper .swiper-slide .swiper-background .background-character figure figcaption {
+  transform: translateY(-10px);
   color: white;
   font-family: "NEXON-Gothic";
 }
@@ -619,13 +656,13 @@ main.v4-page section.character .swiper .swiper-button-next {
   color: white;
 }
 main.v4-page section.character-date {
-  margin-top: 7.2917vw;
+  max-width: 66.6667vw;
+  margin: 0 auto;
   padding-bottom: 7.2917vw;
   width: 100%;
   display: flex;
   align-items: flex-end;
-  max-width: 66.6667vw;
-  margin: 0 auto;
+  margin-top: 7.2917vw;
 }
 main.v4-page section.character-date.observed-element {
   opacity: 0;
@@ -686,6 +723,7 @@ main.v4-page section.character-date .char-explanation .char-ex {
 main.v4-page section.worldstory {
   max-width: 66.6667vw;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 main.v4-page section.worldstory .observed-element {
   transform: translateY(50px);
@@ -738,6 +776,12 @@ main.v4-page section.playvid {
   max-width: 66.6667vw;
   margin: 0 auto;
   text-align: center;
+}
+main.v4-page section.playvid.playvid-sudden {
+  margin-top: 5.2083vw;
+}
+main.v4-page section.playvid.playvid-sudden video {
+  width: 80%;
 }
 main.v4-page section.playvid video {
   width: 49.0625vw;
@@ -831,6 +875,62 @@ main.v4-page section.download .web {
 main.v4-page section.download .web div {
   margin-right: 1.9792vw;
 }
+main.v4-page section.download.hit2-download {
+  width: 85%;
+  max-width: none;
+}
+main.v4-page section.download.hit2-download h1 {
+  width: 100%;
+  text-align: left;
+}
+main.Descendant-page section.img-frame {
+  width: 95%;
+  margin: 5.2083vw auto;
+  text-align: center;
+}
+main.Descendant-page section.img-frame img {
+  width: 100%;
+}
+main.Descendant-page section.img-frame1 {
+  width: 100%;
+  height: 31.7708vw;
+  margin-top: 100px;
+  background-image: url(../../imgs/Descendant/background/first_descendant.jpg);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center;
+}
+main.Descendant-page section.border-frame {
+  position: relative;
+  border-left: 1px solid white;
+}
+main.Descendant-page section.border-frame::after {
+  content: "";
+  width: 1.1458333333vw;
+  height: 1.1458333333vw;
+  position: absolute;
+  background-color: #019fe8;
+  left: -0.5729166667vw;
+  top: 2.8645833333vw;
+  border-radius: 50px;
+}
+main.Descendant-page section.border-frame.border-frame2::after {
+  top: 50%;
+}
+main.Descendant-page section.border-frame.border-frame3::after {
+  top: 90%;
+}
+main.Descendant-page section.Descendant-vid video {
+  width: 100%;
+}
+main.Descendant-page section.Descendant-download {
+  margin-top: 4.8438vw;
+}
+main.Descendant-page section.Descendant-download h1 {
+  color: white;
+  font-size: 1.25vw;
+  padding-bottom: 2.0833vw;
+}
 
 @media (max-width: 1800px) {
   main.v4-page section.download {
@@ -864,6 +964,49 @@ main.v4-page section.download .web div {
   main.v4-page section.slide {
     padding-bottom: 20.8438vw;
   }
+  main.v4-page section.slide .swiper {
+    width: 100%;
+  }
+  main.v4-page section.slide .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  main.v4-page section.character-date.blue-character-date {
+    flex-direction: column;
+    max-width: none;
+    padding-left: 20px;
+    width: 90%;
+    margin: 7.2917vw auto;
+  }
+  main.v4-page section.character-date.blue-character-date .char-name {
+    width: 100%;
+  }
+  main.v4-page section.character-date.blue-character-date .char-name .char-title {
+    width: 100%;
+    text-align: left;
+  }
+  main.v4-page section.character-date.blue-character-date .char-explanation {
+    width: 100%;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    border-left: none;
+  }
+  main.v4-page section.character-date.blue-character-date .char-explanation .char-ex {
+    padding-left: 0;
+  }
+  main.v4-page section.playvid-sudden {
+    max-width: none;
+  }
+  main.v4-page section.playvid-sudden video {
+    height: auto;
+    width: 100% !important;
+  }
+  main.v4-page section.blue-vid {
+    max-width: none;
+  }
+  main.v4-page section.blue-vid video {
+    height: auto;
+    width: 90% !important;
+  }
   main.v4-page section.download {
     max-width: 66.6667vw;
     margin: 0 auto;
@@ -888,6 +1031,95 @@ main.v4-page section.download .web div {
   }
   main.v4-page section.download .web-container {
     margin-top: 1.1094vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .web-container .web {
+    display: flex;
+    align-items: center;
+  }
+  main.v4-page section.download .web-container .web div {
+    margin-bottom: 1.9792vw;
+  }
+  main.v4-page section.download.v4-download {
+    justify-content: center;
+    max-width: none;
+    flex-direction: column;
+  }
+  main.v4-page section.download.v4-download h1 {
+    text-align: left;
+  }
+  main.v4-page section.download.v4-download .app-container .app {
+    flex-direction: row;
+  }
+  main.v4-page section.download.v4-download .web-container {
+    margin: 0;
+  }
+  main.v4-page section.download.v4-download .web-container h1 {
+    width: 100%;
+    text-align: left;
+  }
+  main.v4-page section.download.blue-download {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  main.v4-page section.download.blue-download .web-container {
+    margin: 0;
+  }
+  main.v4-page section.download.blue-download .app-container .app {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 930px) {
+  main.v4-page section.slide {
+    padding-bottom: 20.8438vw;
+  }
+  main.v4-page section.slide .swiper {
+    width: 100%;
+  }
+  main.v4-page section.slide .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  main.v4-page section.playvid-sudden {
+    max-width: none;
+  }
+  main.v4-page section.playvid-sudden video {
+    height: auto;
+    width: 100% !important;
+  }
+  main.v4-page section.download {
+    max-width: 66.6667vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5.9896vw;
+    max-width: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  main.v4-page section.download h1 {
+    text-align: center;
+    padding-right: 18px;
+    color: white;
+    font-family: "NEXON-Bold";
+    margin-bottom: 2.1094vw;
+  }
+  main.v4-page section.download .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .app div {
+    margin-bottom: 1.9792vw;
+  }
+  main.v4-page section.download .web-container {
+    margin-top: 1.1094vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main.v4-page section.download .web-container .web {
     display: flex;
@@ -896,5 +1128,222 @@ main.v4-page section.download .web div {
   }
   main.v4-page section.download .web-container .web div {
     margin-bottom: 1.9792vw;
+  }
+  main.v4-page section.download.v4-download {
+    justify-content: center;
+    max-width: none;
+    flex-direction: row;
+    width: 100%;
+  }
+  main.v4-page section.download.v4-download h1 {
+    text-align: left;
+  }
+  main.v4-page section.download.v4-download .app-container .app {
+    flex-direction: column;
+  }
+  main.v4-page section.download.v4-download .web-container {
+    margin: 0;
+  }
+  main.v4-page section.download.v4-download .web-container h1 {
+    width: 100%;
+    text-align: left;
+  }
+  main.v4-page section.download.v4-download .web-container .web {
+    flex-direction: column;
+  }
+  main.v4-page section.download.hit2-download {
+    width: 85%;
+    max-width: none;
+  }
+  main.v4-page section.download.hit2-download h1 {
+    width: 100%;
+    text-align: left;
+  }
+  main.v4-page section.download.hit2-download .web-container .web {
+    flex-direction: row;
+  }
+  main.v4-page section.download.blue-download {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  main.v4-page section.download.blue-download .web-container {
+    margin: 0;
+  }
+  main.v4-page section.download.blue-download .web-container .web {
+    flex-direction: column;
+  }
+  main.v4-page section.download.blue-download .app-container .app {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 801px) {
+  main.v4-page section.slide {
+    padding-bottom: 20.8438vw;
+  }
+  main.v4-page section.slide.hit2-slide {
+    max-width: none;
+    width: 85%;
+  }
+  main.v4-page section.slide .swiper {
+    width: 100%;
+  }
+  main.v4-page section.slide .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  main.v4-page section.playvid-sudden {
+    max-width: none;
+  }
+  main.v4-page section.playvid-sudden video {
+    height: auto;
+    width: 100% !important;
+  }
+  main.v4-page section.download {
+    max-width: 66.6667vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5.9896vw;
+    max-width: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  main.v4-page section.download h1 {
+    text-align: center;
+    padding-right: 18px;
+    color: white;
+    font-family: "NEXON-Bold";
+    margin-bottom: 2.1094vw;
+  }
+  main.v4-page section.download .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .app div {
+    margin-bottom: 1.9792vw;
+  }
+  main.v4-page section.download .web-container {
+    margin-top: 1.1094vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .web-container .web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .web-container .web div {
+    margin-bottom: 1.9792vw;
+  }
+  main.v4-page section.download.blue-download {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+    margin: 0;
+    padding: 20px;
+  }
+  main.v4-page section.download.blue-download .web-container {
+    margin: 0;
+  }
+  main.v4-page section.download.blue-download .web-container .web {
+    flex-direction: row;
+  }
+  main.v4-page section.download.blue-download .app-container .app {
+    display: flex;
+    flex-direction: row;
+  }
+  main.v4-page section.download.hit2-download {
+    width: 85%;
+    max-width: none;
+  }
+  main.v4-page section.download.hit2-download h1 {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (max-width: 700px) {
+  main.v4-page section.slide {
+    padding-bottom: 20.8438vw;
+  }
+  main.v4-page section.slide .swiper {
+    width: 100%;
+  }
+  main.v4-page section.slide .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  main.v4-page section.playvid-sudden {
+    max-width: none;
+  }
+  main.v4-page section.playvid-sudden video {
+    height: auto;
+    width: 100% !important;
+  }
+  main.v4-page section.download {
+    max-width: 66.6667vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5.9896vw;
+    max-width: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  main.v4-page section.download h1 {
+    text-align: center;
+    padding-right: 18px;
+    color: white;
+    font-family: "NEXON-Bold";
+    margin-bottom: 2.1094vw;
+  }
+  main.v4-page section.download .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .app div {
+    margin-bottom: 1.9792vw;
+  }
+  main.v4-page section.download .web-container {
+    margin-top: 1.1094vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .web-container .web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.v4-page section.download .web-container .web div {
+    margin-bottom: 1.9792vw;
+  }
+  main.v4-page section.download.blue-download {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  main.v4-page section.download.blue-download .web-container {
+    margin: 0;
+  }
+  main.v4-page section.download.blue-download .web-container .web {
+    flex-direction: column;
+  }
+  main.v4-page section.download.blue-download .app-container .app {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=sub.css.map */

@@ -77,7 +77,7 @@ body .loading-overlay .spinner {
   background-color: pink;
 }
 .popup.active {
-  display: none;
+  display: none !important;
 }
 .popup:active {
   cursor: grab;

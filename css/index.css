@@ -94,6 +94,7 @@
   display: block;
   height: 35px;
   padding-left: 5%;
+  color: black;
 }
 .popup .popup-main .popup-content .popup-games a:hover {
   transition: 0.5s;

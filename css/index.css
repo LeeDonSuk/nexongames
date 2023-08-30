@@ -1,3 +1,164 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 800px;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.92);
+  border: 1px solid black;
+}
+.popup.active {
+  display: none;
+}
+.popup .popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  padding: 0px 20px;
+  position: relative;
+  height: 50px;
+  color: white;
+}
+.popup .popup-header h4 {
+  height: 80%;
+  padding: 8px;
+  border-radius: 10px 10px 0px 0px;
+  font-family: "NEXON-Gothic";
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup .popup-header h4::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../imgs/favicon/favicon.ico);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.popup .popup-header ul {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  right: 0;
+}
+.popup .popup-header ul li {
+  padding: 5px;
+}
+.popup .popup-header ul li:hover {
+  cursor: pointer;
+}
+.popup .popup-main {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.popup .popup-main .popup-mainlogo figure {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup .popup-main .popup-mainlogo figure img {
+  width: 6.25%;
+}
+.popup .popup-main .popup-mainlogo figure figcaption {
+  margin-left: 10px;
+  font-family: "NEXON-Light";
+  font-weight: 650;
+  font-size: 24px;
+  color: white;
+}
+.popup .popup-main .popup-content {
+  margin-top: 50px;
+}
+.popup .popup-main .popup-content .popup-games {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 0px 200px 200px 0px;
+  transition: 0.5s;
+}
+.popup .popup-main .popup-content .popup-games:hover {
+  width: 100%;
+}
+.popup .popup-main .popup-content .popup-games:hover ul {
+  padding-left: 40%;
+}
+.popup .popup-main .popup-content .popup-games ul {
+  padding-left: 25%;
+}
+.popup .popup-main .popup-content .popup-games ul li {
+  height: 36px;
+}
+.popup .popup-main .popup-content .popup-games ul li a {
+  font-family: "NEXON-Light";
+  font-weight: 600;
+  font-size: 16px;
+}
+.popup .popup-main .popup-content .popup-games ul li:hover {
+  transition: 0.5s;
+  transform: translateX(10px);
+  cursor: pointer;
+  opacity: 0.5;
+}
+.popup .popup-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.popup .popup-footer .popupcheck-deco {
+  width: 5%;
+  height: 20px;
+  border-radius: 20px;
+  border: 0.5px solid white;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  transition: 0.5s;
+  position: relative;
+  background-color: white;
+}
+.popup .popup-footer .popupcheck-deco > span {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 0;
+  transition: 0.5s;
+  position: absolute;
+  left: -2px;
+  border: 1px solid white;
+}
+.popup .popup-footer .popupcheck-deco.active span {
+  left: 50%;
+  background-color: #007aff;
+}
+.popup .popup-footer input {
+  margin-right: 5px;
+  display: none;
+}
+.popup .popup-footer label {
+  color: white;
+  font-family: "NEXON-Light";
+  font-weight: 600;
+}
+
 main .banner-wrap {
   position: relative;
   width: 100%;

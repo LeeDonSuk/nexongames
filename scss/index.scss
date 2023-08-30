@@ -1,6 +1,172 @@
 @import "./common/media";
 @import "_mixin";
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 800px;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.92);
+    //background: linear-gradient(to top, black, white, black);
+    border: 1px solid black;
+    &.active{
+        display: none;
+    }
+    .popup-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to right, #00b09b, #96c93d);
+        padding: 0px 20px;
+        position: relative;
+        height: 50px;
+        color: white;
+        h4 {
+            height: 80%;
+            padding: 8px;
+            border-radius: 10px 10px 0px 0px;
+            @include Gothic;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background-image: url(../imgs/favicon/favicon.ico);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            right: 0;
+            li {
+                padding: 5px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .popup-main {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        .popup-mainlogo {
+            figure {
+                margin-top: 50px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 6.25%;
+                }
+                figcaption {
+                    margin-left: 10px;
+                    @include light;
+                    font-weight: 650;
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+        }
+        .popup-content {
+            margin-top: 50px;
+            .popup-games {
+                display: flex;
+                align-items: center;
+                width: 300px;
+                height: 300px;
+                background-color: white;
+                border-radius: 0px 200px 200px 0px;
+                transition: .5s;
+                &:hover{
+                    width: 100%;
+                    ul{
+                        padding-left: 40%;
+                    }
+                }
+                ul {
+                    padding-left: 25%;
+                    li {
+                        height: 36px;
+                        a{
+                            @include light;
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            transition: .5s;
+                            transform: translateX(10px);
+                            cursor: pointer;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popup-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        .popupcheck-deco {
+            width: 5%;
+            height: 20px;
+            border-radius: 20px;
+            border: 0.5px solid white;
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+            transition: 0.5s;
+            position: relative;
+            background-color: white;
+            > span {
+                width: 20px;
+                height: 20px;
+                background-color: black;
+                border-radius: 20px;
+                margin-left: 0;
+                transition: 0.5s;
+                position: absolute;
+                left: -2px;
+                border: 1px solid white;
+            }
+            &.active {
+                span {
+                    left: 50%;
+                    background-color: #007aff;
+                }
+            }
+        }
+        input {
+            margin-right: 5px;
+            display: none;
+        }
+        label {
+            color: white;
+            @include light;
+            font-weight: 600;
+        }
+    }
+}
+
 main {
     .banner-wrap {
         position: relative;

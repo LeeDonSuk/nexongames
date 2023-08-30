@@ -17,6 +17,9 @@
     <!-- common -->
     <!-- common -->
     <script defer src="./js/index.js"></script>
+    <!-- popup -->
+    <!-- popup -->
+    <script defer src="./js/popup.js"></script>
     <!-- stylesheet -->
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/index.css">
@@ -37,10 +40,12 @@
     <meta name="twitter:card" content="photo">
     <meta name="twitter:site" content="@paulund_">
     <meta name="twitter:creator" content="@paulund_">
-    <meta name="twitter:url" content="https://search.pstatic.net/common/?src=https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F2315_000_1%2F20220822124246857_OH6NRRDN3.jpg%2F%25EB%2584%25A5%25EC%258A%25A8.jpg%3Ftype%3Dm4500_4500_fst&type=sc960_832">
+    <meta name="twitter:url"
+        content="https://search.pstatic.net/common/?src=https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F2315_000_1%2F20220822124246857_OH6NRRDN3.jpg%2F%25EB%2584%25A5%25EC%258A%25A8.jpg%3Ftype%3Dm4500_4500_fst&type=sc960_832">
     <meta name="twitter:title" content="Image Title">
     <meta name="twitter:description" content="Image Description">
-    <meta name="twitter:image" content="https://search.pstatic.net/common/?src=https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F2315_000_1%2F20220822124246857_OH6NRRDN3.jpg%2F%25EB%2584%25A5%25EC%258A%25A8.jpg%3Ftype%3Dm4500_4500_fst&type=sc960_832">
+    <meta name="twitter:image"
+        content="https://search.pstatic.net/common/?src=https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F2315_000_1%2F20220822124246857_OH6NRRDN3.jpg%2F%25EB%2584%25A5%25EC%258A%25A8.jpg%3Ftype%3Dm4500_4500_fst&type=sc960_832">
     <meta name="twitter:image:width" content="500">
     <meta name="twitter:image:height" content="500">
 </head>
@@ -49,6 +54,64 @@
     <!-- 헤더 -->
     <!-- 헤더 -->
     <header></header>
+    <div class="popup" id="popup">
+        <div class="popup-header">
+          <h4>넥슨게임즈 팝업</h4>
+          <ul>
+            <li>
+              <span class="material-symbols-outlined" id="popupClose">
+                close
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="popup-main">
+            <div class="popup-mainlogo">
+                <figure>
+                    <img src="./imgs/common/header/b_logo.png" alt="logo.png">
+                    <figcaption>현재 구현된 페이지</figcaption>
+                </figure>
+            </div>
+            <div class="popup-content">
+                <div class="popup-games">
+                    <ul>
+                        <li>
+                            <a href="./index.html">
+                                메인페이지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./html/nexongames.html">
+                                넥슨게임즈
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./html/V4.html">V4</a>
+                        </li>
+                        <li>
+                            <a href="./html/suddenattack.html">서든어택</a>
+                        </li>
+                        <li>
+                            <a href="./html/bluearchive.html">블루 아카이브</a>
+                        </li>
+                        <li>
+                            <a href="./html/Descendant.html">퍼스트 디센던트</a>
+                        </li>
+                        <li>
+                            <a href="./html/hit2.html">HIT2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-footer">
+          <div class="popupcheck-deco">
+            <span></span>
+          </div>
+          <input type="checkbox" name="popupcheck" id="popupcheck">
+          <label for="popupcheck">24시간 보지않기</label>
+        </div>
+      </div>
     <main>
         <section class="banner-wrap observed-element">
             <div class="swiper mySwiper banner-slide">

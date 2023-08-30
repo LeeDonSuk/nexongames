@@ -1,0 +1,325 @@
+@import "../../mixin";
+
+main {
+    &.culture-page {
+        .banner-container {
+            @include width(1280px, 70px);
+            .culture-title {
+                .ct-nav {
+                    padding-top: 2.6042vw;
+                    figure {
+                        width: 95%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: right;
+                        img {
+                            margin-right: 5px;
+                        }
+                        figcaption {
+                            color: #666;
+                        }
+                    }
+                }
+                .ct-title {
+                    h1 {
+                        font-size: 3.4375vw;
+                        margin-bottom: 4.1667vw;
+                        padding-left: 9.375vw;
+                    }
+                }
+            }
+            .banner {
+                figure {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        @include width(1280px, 0);
+                    }
+                    figcaption {
+                        position: absolute;
+                        bottom: 2.7385vw;
+                        left: 3.4vw;
+                        color: white;
+                        h2 {
+                            font-size: 3.3854vw;
+                            @include bold;
+                            margin-bottom: 4.1667vw;
+                        }
+                        p {
+                            font-size: 1.5625vw;
+                            line-height: 1.5;
+                            @include light;
+                        }
+                    }
+                }
+            }
+        }
+        .method {
+            .method-title {
+                padding-top: 12.5vw;
+                padding-bottom: 3.2078vw;
+                font-size: 2.6042vw;
+                @include width(95%, 0);
+                @include width(1280px, 70px);
+            }
+            .method-content {
+                background-color: #f8f8f8;
+                padding: 6.25vw 0;
+                .method-contianer {
+                    @include width(1280px, 70px);
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .method-circle {
+                        width: 240px;
+                        height: 240px;
+                        border: 5px solid #cccccc;
+                        border-radius: 500px;
+                        margin-right: 1.9165vw;
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 2.2396vw 0;
+                        .circle-title {
+                            @include Gothic;
+                            font-weight: 600;
+                            font-size: 1.25vw;
+                            margin-bottom: 1.3021vw;
+                            padding-top: 1.5096vw;
+                        }
+                        .circle-text {
+                            @include Gothic;
+                            font-size: 0.8333vw;
+                            margin-bottom: 0.7813vw;
+                            color: #888888;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+        }
+        .big-method {
+            @include width(1280px, 70px);
+            .method-Square {
+                margin-bottom: 2.6042vw;
+                padding-bottom: 4.6875vw;
+                border-bottom: 1px solid #ededed;
+                &:nth-of-type(2n) {
+                    figure {
+                        img {
+                            margin-right: 12.1094vw;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &:nth-of-type(7) {
+                    border: none;
+                }
+                figure {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin: 0 auto;
+                    img {
+                        max-width: 100%;
+                        margin-left: 12.1094vw;
+                    }
+                    figcaption {
+                        width: 50%;
+                        .big-title {
+                            @include bold;
+                            font-size: 1.25vw;
+                            margin-bottom: 1.3021vw;
+                            color: #cccccc;
+                        }
+                        .big-subtitle {
+                            @include bold;
+                            font-size: 1.8229vw;
+                            color: #191b1d;
+                            margin-bottom: 2.0833vw;
+                        }
+                        .big-text {
+                            font-size: 0.9375vw;
+                            color: #191b1d;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1300px) {
+    main {
+        &.culture-page {
+            padding: 10px;
+        }
+    }
+}
+@media (max-width: 950px) {
+    main {
+        &.culture-page {
+            padding: 10px;
+            .banner-container {
+                width: 90%;
+                .culture-title {
+                    .ct-title {
+                        h1 {
+                            padding-left: 0;
+                        }
+                    }
+                }
+                .banner {
+                    figure {
+                        figcaption {
+                            bottom: 5.7385vw;
+                            h2 {
+                            }
+                        }
+                    }
+                }
+            }
+            .method {
+                .method-title {
+                    width: 90%;
+                }
+            }
+            .big-method {
+                .method-Square {
+                    &:nth-of-type(2n) {
+                        figure {
+                            img {
+                                margin-left: 12.1094vw;
+                            }
+                        }
+                    }
+                    figure {
+                        img {
+                        }
+                    }
+                    &:nth-of-type(1) {
+                        figure {
+                            flex-direction: row-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        figure {
+                            flex-direction: row-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                    &:nth-of-type(5) {
+                        figure {
+                            flex-direction: row-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                    &:nth-of-type(7) {
+                        figure {
+                            flex-direction: row-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    main {
+        &.culture-page {
+            padding: 10px;
+            .banner-container {
+                width: 90%;
+                .culture-title {
+                    .ct-title {
+                        h1 {
+                            padding-left: 0;
+                        }
+                    }
+                }
+                .banner {
+                    figure {
+                        figcaption {
+                            bottom: 5.7385vw;
+                            h2 {
+                            }
+                        }
+                    }
+                }
+            }
+            .method {
+                .method-title {
+                    width: 90%;
+                }
+            }
+            .big-method {
+                .method-Square {
+                    figure{
+                        flex-direction: column;
+                        img{
+                            margin-top: 5.5556vw;
+                            margin-bottom: 5.5556vw;
+                        }
+                    }
+                    &:nth-of-type(2n) {
+                        figure {
+                            img {
+                                margin-left: 12.1094vw;
+                            }
+                        }
+                    }
+                    figure {
+                        img {
+                        }
+                    }
+                    &:nth-of-type(1) {
+                        figure {
+                            flex-direction:column-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        figure {
+                            flex-direction:column-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                    &:nth-of-type(5) {
+                        figure {
+                            flex-direction:column-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                    &:nth-of-type(7) {
+                        figure {
+                            flex-direction:column-reverse;
+                            img {
+                                margin-right: 12.1094vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

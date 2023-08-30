@@ -1,11 +1,15 @@
-@mixin greed{
-        max-width: 66.6667vw;
-        margin: 0 auto;
+@mixin greed {
+    max-width: 66.6667vw;
+    margin: 0 auto;
 }
-@mixin secheigth{
-        height: 59.4792vw;
+@mixin width($max,$margin) {
+    max-width: $max;
+    margin: $margin auto;
 }
-@mixin bold{
+@mixin secheigth {
+    height: 59.4792vw;
+}
+@mixin bold {
     font-family: "NEXON-Bold";
 }
 @mixin light {
@@ -14,14 +18,14 @@
 @mixin Gothic {
     font-family: "NEXON-Gothic";
 }
-@mixin deco{
+@mixin deco {
     width: 1px;
     height: 50px;
     background-color: black;
     margin: 0 auto;
     margin-top: 3.6458vw;
 }
-@mixin textdeco{
+@mixin textdeco {
     position: relative;
     &::after {
         content: "";

@@ -1,0 +1,243 @@
+main.culture-page .banner-container {
+  max-width: 1280px;
+  margin: 70px auto;
+}
+main.culture-page .banner-container .culture-title .ct-nav {
+  padding-top: 2.6042vw;
+}
+main.culture-page .banner-container .culture-title .ct-nav figure {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+main.culture-page .banner-container .culture-title .ct-nav figure img {
+  margin-right: 5px;
+}
+main.culture-page .banner-container .culture-title .ct-nav figure figcaption {
+  color: #666;
+}
+main.culture-page .banner-container .culture-title .ct-title h1 {
+  font-size: 3.4375vw;
+  margin-bottom: 4.1667vw;
+  padding-left: 9.375vw;
+}
+main.culture-page .banner-container .banner figure {
+  position: relative;
+}
+main.culture-page .banner-container .banner figure img {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+main.culture-page .banner-container .banner figure figcaption {
+  position: absolute;
+  bottom: 2.7385vw;
+  left: 3.4vw;
+  color: white;
+}
+main.culture-page .banner-container .banner figure figcaption h2 {
+  font-size: 3.3854vw;
+  font-family: "NEXON-Bold";
+  margin-bottom: 4.1667vw;
+}
+main.culture-page .banner-container .banner figure figcaption p {
+  font-size: 1.5625vw;
+  line-height: 1.5;
+  font-family: "NEXON-Light";
+}
+main.culture-page .method .method-title {
+  padding-top: 12.5vw;
+  padding-bottom: 3.2078vw;
+  font-size: 2.6042vw;
+  max-width: 95%;
+  margin: 0 auto;
+  max-width: 1280px;
+  margin: 70px auto;
+}
+main.culture-page .method .method-content {
+  background-color: #f8f8f8;
+  padding: 6.25vw 0;
+}
+main.culture-page .method .method-content .method-contianer {
+  max-width: 1280px;
+  margin: 70px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main.culture-page .method .method-content .method-contianer .method-circle {
+  width: 240px;
+  height: 240px;
+  border: 5px solid #cccccc;
+  border-radius: 500px;
+  margin-right: 1.9165vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.2396vw 0;
+}
+main.culture-page .method .method-content .method-contianer .method-circle .circle-title {
+  font-family: "NEXON-Gothic";
+  font-weight: 600;
+  font-size: 1.25vw;
+  margin-bottom: 1.3021vw;
+  padding-top: 1.5096vw;
+}
+main.culture-page .method .method-content .method-contianer .method-circle .circle-text {
+  font-family: "NEXON-Gothic";
+  font-size: 0.8333vw;
+  margin-bottom: 0.7813vw;
+  color: #888888;
+  font-weight: 100;
+}
+main.culture-page .big-method {
+  max-width: 1280px;
+  margin: 70px auto;
+}
+main.culture-page .big-method .method-Square {
+  margin-bottom: 2.6042vw;
+  padding-bottom: 4.6875vw;
+  border-bottom: 1px solid #ededed;
+}
+main.culture-page .big-method .method-Square:nth-of-type(2n) figure img {
+  margin-right: 12.1094vw;
+  margin-left: 0;
+}
+main.culture-page .big-method .method-Square:nth-of-type(7) {
+  border: none;
+}
+main.culture-page .big-method .method-Square figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+main.culture-page .big-method .method-Square figure img {
+  max-width: 100%;
+  margin-left: 12.1094vw;
+}
+main.culture-page .big-method .method-Square figure figcaption {
+  width: 50%;
+}
+main.culture-page .big-method .method-Square figure figcaption .big-title {
+  font-family: "NEXON-Bold";
+  font-size: 1.25vw;
+  margin-bottom: 1.3021vw;
+  color: #cccccc;
+}
+main.culture-page .big-method .method-Square figure figcaption .big-subtitle {
+  font-family: "NEXON-Bold";
+  font-size: 1.8229vw;
+  color: #191b1d;
+  margin-bottom: 2.0833vw;
+}
+main.culture-page .big-method .method-Square figure figcaption .big-text {
+  font-size: 0.9375vw;
+  color: #191b1d;
+  line-height: 1.5;
+}
+
+@media (max-width: 1300px) {
+  main.culture-page {
+    padding: 10px;
+  }
+}
+@media (max-width: 950px) {
+  main.culture-page {
+    padding: 10px;
+  }
+  main.culture-page .banner-container {
+    width: 90%;
+  }
+  main.culture-page .banner-container .culture-title .ct-title h1 {
+    padding-left: 0;
+  }
+  main.culture-page .banner-container .banner figure figcaption {
+    bottom: 5.7385vw;
+  }
+  main.culture-page .method .method-title {
+    width: 90%;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(2n) figure img {
+    margin-left: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(1) figure {
+    flex-direction: row-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(1) figure img {
+    margin-right: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(3) figure {
+    flex-direction: row-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(3) figure img {
+    margin-right: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(5) figure {
+    flex-direction: row-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(5) figure img {
+    margin-right: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(7) figure {
+    flex-direction: row-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(7) figure img {
+    margin-right: 12.1094vw;
+  }
+}
+@media (max-width: 768px) {
+  main.culture-page {
+    padding: 10px;
+  }
+  main.culture-page .banner-container {
+    width: 90%;
+  }
+  main.culture-page .banner-container .culture-title .ct-title h1 {
+    padding-left: 0;
+  }
+  main.culture-page .banner-container .banner figure figcaption {
+    bottom: 5.7385vw;
+  }
+  main.culture-page .method .method-title {
+    width: 90%;
+  }
+  main.culture-page .big-method .method-Square figure {
+    flex-direction: column;
+  }
+  main.culture-page .big-method .method-Square figure img {
+    margin-top: 5.5556vw;
+    margin-bottom: 5.5556vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(2n) figure img {
+    margin-left: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(1) figure {
+    flex-direction: column-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(1) figure img {
+    margin-right: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(3) figure {
+    flex-direction: column-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(3) figure img {
+    margin-right: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(5) figure {
+    flex-direction: column-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(5) figure img {
+    margin-right: 12.1094vw;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(7) figure {
+    flex-direction: column-reverse;
+  }
+  main.culture-page .big-method .method-Square:nth-of-type(7) figure img {
+    margin-right: 12.1094vw;
+  }
+}/*# sourceMappingURL=Enterprise.css.map */

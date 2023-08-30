@@ -18,7 +18,7 @@ function headerload() {
     // 헤더를 변수에 담는다
 
     //헤더 html의 경로를 찾고 가져온다
-    fetch("../html/common/header_b.html")
+    fetch("https://github.com/LeeDonSuk/nexongames/html/common/header_b.html")
         //콜백 함수로 응답 객체를 받아서 .text() 메서드를 사용해서
         //텍스트형식으로 변환후에 다음 then으로 전달된다.
         .then(response => response.text())

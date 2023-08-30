@@ -15,6 +15,9 @@
     &.active {
         display: none;
     }
+    &:active{
+        cursor: grab;
+    }
     .popup-header {
         display: flex;
         align-items: center;

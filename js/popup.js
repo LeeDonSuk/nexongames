@@ -28,6 +28,33 @@ document.addEventListener("DOMContentLoaded", function () {
         popuppage.classList.add("active");
     });
 
+    // 팝업 드래그 가능한 기능 추가
+    const popupHeader = document.querySelector(".popup-header");
+    let isDragging = false;
+    let initialX, initialY, offsetX, offsetY;
+
+    popupHeader.addEventListener("mousedown", function (e) {
+        isDragging = true;
+        initialX = e.clientX;
+        initialY = e.clientY;
+        offsetX = parseFloat(getComputedStyle(popuppage).left);
+        offsetY = parseFloat(getComputedStyle(popuppage).top);
+    });
+
+    document.addEventListener("mousemove", function (e) {
+        if (!isDragging) return;
+
+        const dx = e.clientX - initialX;
+        const dy = e.clientY - initialY;
+
+        popuppage.style.left = offsetX + dx + "px";
+        popuppage.style.top = offsetY + dy + "px";
+    });
+
+    document.addEventListener("mouseup", function () {
+        isDragging = false;
+    });
+
     // 쿠키 생성 함수
     function setCookie(name, value, days) {
         var expires = "";

@@ -81,25 +81,21 @@
   background-color: white;
   border-radius: 0px 200px 200px 0px;
   transition: 0.5s;
+  flex-direction: column;
+  justify-content: center;
 }
 .popup .popup-main .popup-content .popup-games:hover {
   width: 100%;
 }
-.popup .popup-main .popup-content .popup-games:hover ul {
-  padding-left: 40%;
-}
-.popup .popup-main .popup-content .popup-games ul {
-  padding-left: 25%;
-}
-.popup .popup-main .popup-content .popup-games ul li {
-  height: 36px;
-}
-.popup .popup-main .popup-content .popup-games ul li a {
+.popup .popup-main .popup-content .popup-games a {
   font-family: "NEXON-Light";
   font-weight: 600;
   font-size: 16px;
+  display: block;
+  height: 35px;
+  padding-left: 5%;
 }
-.popup .popup-main .popup-content .popup-games ul li:hover {
+.popup .popup-main .popup-content .popup-games a:hover {
   transition: 0.5s;
   transform: translateX(10px);
   cursor: pointer;
